@@ -1,5 +1,5 @@
 ## Related Tickets
-- [#TicketID](https://edu-redmine.sun-asterisk.vn/issues/52013)
+- [#TicketID](https://edu-redmine.sun-asterisk.vn/issues/52027)
 
 ## WHAT (optional)
 - Change number items `completed/total` in admin page.
