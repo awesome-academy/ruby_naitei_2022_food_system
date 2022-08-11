@@ -11,3 +11,10 @@
   Category.create!(name: name,
                parent_id: 0)
 end
+require "faker"
+# Create a main sample user.
+User.create!(name: "admin",
+             email: "admin@gmail.com",
+             password: "12341234",
+             password_confirmation: "12341234",
+             admin: true)
