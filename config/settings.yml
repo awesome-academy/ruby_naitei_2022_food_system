@@ -1,0 +1,8 @@
+user:
+  name_max: 50
+  name_min: 2
+  email_max: 255
+  password_min: 6
+  password_max: 20
+  email_pattern: !ruby/regexp /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
+  gavatar_size: 80

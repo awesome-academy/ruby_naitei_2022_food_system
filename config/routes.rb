@@ -1,6 +1,13 @@
 Rails.application.routes.draw do
-  root to: "home#home"
-  namespace :admin do
-    root to: "dashboard#index"
+  scope "(:locale)", locale: /en|vi/ do
+    root "home#home"
+    get "/signup", to: "users#new"
+    get "/login", to: "sessions#new"
+    post "/login", to: "sessions#create"
+    delete "/logout", to: "sessions#destroy"
+    resources :users
+    namespace :admin do
+      root to: "dashboard#index"
+    end
   end
 end

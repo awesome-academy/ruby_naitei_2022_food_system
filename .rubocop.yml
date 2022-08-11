@@ -11,7 +11,7 @@ inherit_from:
 
 # Common configuration.
 AllCops:
-  # Include gemspec and Rakefile
+  NewCops: enable
   Include:
     - 'app/**/*'
     - 'lib/**/*'
@@ -281,7 +281,7 @@ Style/LambdaCall:
     - call
     - braces
 
-Metrics/LineLength:
+Layout/LineLength:
   Max: 80
   AllowURI: true
   Exclude:
