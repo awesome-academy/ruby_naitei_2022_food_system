@@ -10,6 +10,7 @@ gem "bootstrap-sass", "3.4.1"
 gem "config"
 gem "faker", {git: "https://github.com/faker-ruby/faker.git", branch: "master"}
 gem "figaro"
+gem "font-awesome-sass", "~> 6.1.2"
 gem "image_processing", "1.9.3"
 gem "jbuilder", "~> 2.7"
 gem "mini_magick", "4.9.5"
