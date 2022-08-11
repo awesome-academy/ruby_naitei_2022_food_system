@@ -1,5 +1,4 @@
 <% provide(:title, t(".title")) %>
-
 <section class="vh-100">
   <div class="container py-5 h-100">
     <div class="row d-flex align-items-center justify-content-center h-100">
@@ -13,13 +12,13 @@
         <%= form_for(:session, url: login_path) do |f| %>
           <!-- Email input -->
           <div class="form-outline mb-4">
-            <%= f.label :email, t(".form.email") %>
+            <%= f.label :email, t(".email") %>
             <%= f.email_field :email, class: "form-control" %>
           </div>
 
           <!-- Password input -->
           <div class="form-outline mb-4">
-            <%= f.label :password, t(".form.password") %>
+            <%= f.label :password, t(".password") %>
             <%= f.password_field :password, class: "form-control" %>
           </div>
           <div class="row mb-4">
@@ -27,12 +26,12 @@
             <hr>
             <%= f.label :remember_me, class: "form-check-input" do %>
               <%= f.check_box :remember_me %>
-              <span><%= t(".form.remember_me") %></span>
+              <span><%= t(".remember_me") %></span>
             <% end %>
             </div>
           </div>
           <!-- Submit button -->
-          <%= f.submit t(".form.btn_submit"), class: "btn btn-primary" %>
+          <%= f.submit t(".btn_submit"), class: "btn btn-primary" %>
         <% end %>
         <hr>
         <p><%= t(".new_user")%> <%= link_to t(".signupnow"), signup_path %></p>

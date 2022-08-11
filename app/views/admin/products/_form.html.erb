@@ -20,7 +20,7 @@
     <%= raw error_message(@product, :stock_quantity) %>
   </div>
   <div class="form-group">
-    <%= f.label :category_id, "Category" %>
+    <%= f.label :category_id, t(".category") %>
     <%= f.select :category_id, category_options ,{include_blank: t(".choose")}, {class: "form-control"} %>
     <%= raw error_message(@product, :category_id) %>
   </div>
@@ -28,6 +28,15 @@
     <%= f.label :images, t(".image") %>
     <%= f.file_field :images, multiple: true, accept: "image/jpeg,image/png", class: "form-control" %>
     <%= raw error_message(@product, :images) %>
+    <div class="col">
+      <div class="row">
+        <% @product.images.each do |image| %>
+          <div class="col-4 p-2">
+            <%= image_tag image, class: "product-image" %>
+          </div>
+        <% end %>
+      </div>
+    </div>
   </div>
   <%= f.submit yield(:btn_text), class: "btn btn-primary" %>
 <% end %>

@@ -1,0 +1,32 @@
+vi:
+  not_found: "Xin lỗi không tìm thấy"
+  admin:
+    categories:
+      index:
+        categories: "Danh mục sản phẩm"
+        name: "Tên: "
+        parent: "Danh mục cha: "
+        new_category: "Tạo danh mục mới"
+      edit:
+        editing: "Chỉnh sửa danh mục sản phẩm"
+        btn_submit: "Lưu thay đổi"
+      new:
+        title: "Tạo danh mục mới"
+        btn_submit: "Thêm danh mục"
+      create:
+        create_success: "Tạo mới thành công"
+        create_failed: "Không tạo mới được"
+      update:
+        update_success: "Cập nhật thành công"
+        update_failed: "Cập nhật thất bại"
+      destroy:
+        delete_success: "Xóa thành công"
+        delete_failed: "Đã xảy ra lỗi khi xóa"
+      form:
+        category_name: "Tên danh mục"
+        parent: "Chọn danh mục cha"
+        back: "Quay lại"
+      category:
+        edit: "Chỉnh sửa"
+        destroy: "Xóa"
+        you_sure: "Bạn chắc chứ?"

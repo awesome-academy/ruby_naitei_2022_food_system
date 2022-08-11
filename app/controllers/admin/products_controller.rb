@@ -14,11 +14,32 @@ class Admin::ProductsController < Admin::AdminController
     @product.images.attach(params[:product][:images])
     if @product.save
       flash[:success] = t ".success"
-      redirect_to new_admin_product_url
+      redirect_to new_admin_product_path
     else
-      flash.now[:error] = t ".error"
+      flash.now[:error] = t ".failed"
       render :new
     end
+  end
+
+  def edit; end
+
+  def update
+    if @product.update product_params
+      flash[:success] = t ".success"
+      redirect_to admin_products_path
+    else
+      flash.now[:error] = t ".failed"
+      render :edit
+    end
+  end
+
+  def destroy
+    if @product.destroy
+      flash[:success] = t ".success"
+    else
+      flash[:error] = t ".failed"
+    end
+    redirect_to admin_products_path
   end
 
   private
@@ -33,6 +54,6 @@ class Admin::ProductsController < Admin::AdminController
     return if @product
 
     flash[:error] = t ".not_found"
-    redirect_to admin_products_url
+    redirect_to admin_products_path
   end
 end
