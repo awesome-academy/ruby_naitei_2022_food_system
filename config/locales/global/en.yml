@@ -1,0 +1,19 @@
+en:
+  pagy:
+    nav:
+      prev: "< Previous"
+      next: "Next >"
+      gap: "..."
+
+  admin:
+    shared:
+      sidebar:
+        categories: "Categories"
+        products: "Products"
+      header:
+        en: "Tiếng Anh"
+        vi: "Tiếng Việt"
+
+  layouts:
+    application_admin:
+      foodee: "Fút đê"
