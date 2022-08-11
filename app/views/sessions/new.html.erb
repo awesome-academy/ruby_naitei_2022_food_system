@@ -1,18 +1,33 @@
 <% provide(:title, t(".title")) %>
-<h1><%= t(".title") %></h1>
-<div class="row">
-  <div class="col-md-6 col-md-offset-3">
-    <%= form_for(:session, url: login_path) do |f| %>
 
-      <%= f.label :email, t(".form.email") %>
-      <%= f.email_field :email, class: "form-control" %>
+<section class="vh-100">
+  <div class="container py-5 h-100">
+    <div class="row d-flex align-items-center justify-content-center h-100">
+      <div class="col-md-8 col-lg-7 col-xl-6">
+        <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.svg"
+          class="img-fluid" alt="Phone image">
+      </div>
+      <div class="col-md-7 col-lg-5 col-xl-5 offset-xl-1">
+      <h1><%= t(".title") %></h1>
+      <br>
+        <%= form_for(:session, url: login_path) do |f| %>
+          <!-- Email input -->
+          <div class="form-outline mb-4">
+            <%= f.label :email, t(".form.email") %>
+            <%= f.email_field :email, class: "form-control" %>
+          </div>
 
-      <%= f.label :password, t(".form.password") %>
-      <%= f.password_field :password, class: "form-control" %>
+          <!-- Password input -->
+          <div class="form-outline mb-4">
+            <%= f.label :password, t(".form.password") %>
+            <%= f.password_field :password, class: "form-control" %>
+          </div>
 
-      <%= f.submit t(".form.btn_submit"), class: "btn btn-primary" %>
-    <% end %>
-    <hr>
-    <p><%= t(".new_user")%> <%= link_to t(".signupnow"), signup_path %></p>
+          <%= f.submit t(".form.btn_submit"), class: "btn btn-primary" %>
+        <% end %>
+        <hr>
+        <p><%= t(".new_user")%> <%= link_to t(".signupnow"), signup_path %></p>
+      </div>
+    </div>
   </div>
-</div>
+</section>

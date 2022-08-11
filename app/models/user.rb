@@ -6,12 +6,12 @@ class User < ApplicationRecord
         length: {maximum: Settings.user.email_max},
         format: {with: Settings.user.email_pattern},
         uniqueness: true
-
   validates :password, presence: true,
         length: {minimum: Settings.user.password_min,
                  maximum: Settings.user.password_max}
 
   has_secure_password
+
   before_save :downcase_email
 
   private

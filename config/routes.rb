@@ -8,6 +8,7 @@ Rails.application.routes.draw do
     resources :users
     namespace :admin do
       root to: "dashboard#index"
+      resources :categories, except: :show
     end
   end
 end
