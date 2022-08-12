@@ -1,0 +1,53 @@
+vi:
+  layouts:
+    header:
+      home: "Trang chủ"
+      help: "Trợ giúp"
+      login: "Đăng nhập"
+      users: "Người dùng"
+      account: "Tài khoản"
+      profile: "Hồ sơ"
+      setting: "Cài đặt"
+      logout: "Đăng xuất"
+
+    application:
+      english: "Tiếng Anh"
+      vietnamese: "Tiếng Việt"
+
+  sessions:
+    new:
+      title: "Đăng nhập"
+      new_user: "Người dùng mới?"
+      signupnow: "Đăng ký ngay!"
+      form:
+        email: "Email"
+        password: "Mật khẩu"
+        btn_submit: "Đăng nhập"
+    create:
+      invalid: "Email/mật khẩu không hợp lệ"
+
+  users:
+    new:
+      title: "Đăng ký"
+      form:
+        name: "Tên"
+        email: "Email"
+        password: "Mật khẩu"
+        password_confirmation: "Xác nhận mật khẩu"
+        btn_submit: "Tạo tài khoản"
+        have_account: "Nếu đã có tài khoản  "
+        login: "Đăng nhập"
+
+
+    show:
+      not_found_user: "Người dùng không được tìm thấy!"
+
+    create:
+      signup_success: "đăng ký thành công!"
+
+  shared:
+    error_form: "Biểu mẫu chứa"
+    error: "lỗi"
+  customer:
+    home:
+      login: "Đăng nhập"
