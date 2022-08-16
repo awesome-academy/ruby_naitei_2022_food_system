@@ -1,4 +1,12 @@
 vi:
+  flashes:
+    not_found: "Xin lỗi không tìm thấy"
+    delete_success: "Xóa thành công"
+    delete_failed: "Đã xảy ra lỗi khi xóa"
+    update_success: "Cập nhật thành công"
+    update_failed: "Cập nhật thất bại"
+    create_success: "Tạo mới thành công"
+    create_failed: "Không tạo mới được"
   layouts:
     header:
       home: "Trang chủ"
@@ -25,6 +33,36 @@ vi:
         btn_submit: "Đăng nhập"
     create:
       invalid: "Email/mật khẩu không hợp lệ"
+
+  admin:
+    categories:
+      index:
+        categories: "Danh mục sản phẩm"
+        name: "Tên: "
+        parent: "Danh mục cha: "
+        new_category: "Tạo danh mục mới"
+      edit:
+        editing: "Chỉnh sửa danh mục sản phẩm"
+
+      new:
+        title: "Tạo danh mục mới"
+
+      form:
+        category_name: "Tên danh mục"
+        parent: "Chọn loại danh mục"
+        back: "Quay lại"
+        submit: "Thêm"
+
+      category:
+        edit: "Chỉnh sửa"
+        destroy: "Xóa"
+        you_sure: "Bạn chắc chứ?"
+
+
+      error: "Khiến không thể tạo được danh mục mới"
+      none: "Không có"
+      details: "Chi tiết"
+      content: "Nội dung"
 
   users:
     new:

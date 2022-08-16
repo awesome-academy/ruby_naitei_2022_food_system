@@ -1,0 +1,11 @@
+<tr>
+  <td><%= category.name %></td>
+  <td><%= category.parent_id %></td>
+  <td>
+    <div class="d-grid gap-2 d-md-block">
+      <%= link_to t(".edit"), edit_admin_category_path(category),class: "btn btn-primary" %>
+      <%= link_to t(".destroy"), admin_category_path(category), method: :delete,
+          data: { confirm: t(".you_sure") },class: "btn btn-danger" %>
+    </div>
+  </td>
+</tr>
