@@ -1,0 +1,34 @@
+vi:
+  admin:
+    products:
+      not_found: "Sản phẩm không tồn tại"
+      form:
+        name: "Tên sản phẩm"
+        description: "Mô tả sản phẩm"
+        price: "Giá sản phẩm"
+        quantity: "Số lượng hiện có"
+        image: "Hình ảnh cho sản phầm"
+        choose: "Chọn danh mục"
+      index:
+        title: "Tất cả sản phẩm"
+        key: "Tất cả"
+        value: "sản phẩm"
+        new_product: "Thêm sản phẩm"
+        id: "Mã sp"
+        name: "Tên"
+        price: "Giá"
+        quantity: "Số lượng kho"
+        image: "Ảnh"
+        created_at: "Được tạo lúc"
+        updated_at: "Cập nhật lúc"
+        actions: "Thao tác"
+        edit: "Sửa"
+        delete: "Xóa"
+      new:
+        title: "Thêm sản phẩm"
+        key: "Thêm"
+        value: "Sản phẩm"
+        btn_submit: "Thêm"
+      create:
+        success: "Thêm sản phẩm thành công!"
+        error: "Thêm sản phẩm thất bại. Vui lòng thử lại!"

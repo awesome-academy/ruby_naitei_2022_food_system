@@ -1,0 +1,34 @@
+en:
+  admin:
+    products:
+      not_found: "This product is not exist"
+      form:
+        name: "Product name"
+        description: "Product description"
+        price: "Product price"
+        quantity: "Product stock quantity"
+        image: "Prodcuts Images"
+        choose: "Choose a category"
+      index:
+        title: "All products"
+        key: "All"
+        value: "Products"
+        new_product: "New Product"
+        id: "Product id"
+        name: "Name"
+        price: "Price"
+        quantity: "Stock quantity"
+        image: "Image"
+        created_at: "Created at"
+        updated_at: "Updated at"
+        actions: "Actions"
+        edit: "Edit"
+        delete: "Delete"
+      new:
+        title: "New product"
+        key: "Add"
+        value: "Product"
+        btn_submit: "Submit"
+      create:
+        success: "Add products successfuly!"
+        error: "Add product failed. Please try again!"
