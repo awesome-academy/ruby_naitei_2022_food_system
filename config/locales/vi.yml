@@ -7,6 +7,8 @@ vi:
     update_failed: "Cập nhật thất bại"
     create_success: "Tạo mới thành công"
     create_failed: "Không tạo mới được"
+    please_login: "Vui lòng hãy đăng nhập."
+    access_denied: "Bạn không thể truy cập trang này. Vui lòng đăng nhập trước"
   layouts:
     header:
       home: "Trang chủ"
@@ -31,38 +33,9 @@ vi:
         email: "Email"
         password: "Mật khẩu"
         btn_submit: "Đăng nhập"
+        remember_me: "Ghi nhớ đăng nhập"
     create:
       invalid: "Email/mật khẩu không hợp lệ"
-
-  admin:
-    categories:
-      index:
-        categories: "Danh mục sản phẩm"
-        name: "Tên: "
-        parent: "Danh mục cha: "
-        new_category: "Tạo danh mục mới"
-      edit:
-        editing: "Chỉnh sửa danh mục sản phẩm"
-
-      new:
-        title: "Tạo danh mục mới"
-
-      form:
-        category_name: "Tên danh mục"
-        parent: "Chọn loại danh mục"
-        back: "Quay lại"
-        submit: "Thêm"
-
-      category:
-        edit: "Chỉnh sửa"
-        destroy: "Xóa"
-        you_sure: "Bạn chắc chứ?"
-
-
-      error: "Khiến không thể tạo được danh mục mới"
-      none: "Không có"
-      details: "Chi tiết"
-      content: "Nội dung"
 
   users:
     new:
@@ -75,7 +48,6 @@ vi:
         btn_submit: "Tạo tài khoản"
         have_account: "Nếu đã có tài khoản  "
         login: "Đăng nhập"
-
 
     show:
       not_found_user: "Người dùng không được tìm thấy!"

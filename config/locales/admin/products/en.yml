@@ -1,4 +1,13 @@
 en:
+  flashes:
+    not_found: "Sorry, can't find what you look for"
+    delete_success: "Successfully deleted"
+    delete_failed: "Error occured during deletion"
+    update_success: "Successfully updated"
+    update_failed: "Error occured during updating"
+    create_success: "Successfully created"
+    create_failed: "Error occured during creating"
+    please_login: "Please log in."
   admin:
     products:
       not_found: "This product is not exist"
@@ -32,3 +41,25 @@ en:
       create:
         success: "Add products successfuly!"
         error: "Add product failed. Please try again!"
+
+    categories:
+      index:
+        name: "Name: "
+        parent: "Parent category: "
+        new_category: "New category"
+        categories: "Categories"
+      edit:
+        editing: "Editing categories"
+
+      new:
+        title: "New category"
+
+      form:
+        category_name: "Category name"
+        parent: "Choose Parent"
+        back: "Back"
+        submit: "Submit"
+      category:
+        edit: "Edit"
+        destroy: "Destroy"
+        you_sure: "Are you sure?"

@@ -7,6 +7,8 @@ en:
     update_failed: "Error occured during updating"
     create_success: "Successfully created"
     create_failed: "Error occured during creating"
+    please_login: "Please log in."
+    access_denied: "You can not access this page. Please login first"
   layouts:
     header:
       home: "Home"
@@ -32,39 +34,9 @@ en:
         email: "Email"
         password: "Password"
         btn_submit: "Log in"
+        remember_me: "Remember me"
     create:
       invalid: "Invalid email/password combination"
-
-  admin:
-    categories:
-      index:
-        name: "Name: "
-        parent: "Parent category: "
-        new_category: "New category"
-        categories: "Categories"
-      edit:
-        editing: "Editing categories"
-
-      new:
-        title: "New category"
-
-      form:
-        category_name: "Category name"
-        parent: "Choose Parent"
-        back: "Back"
-        submit: "Submit"
-      category:
-        edit: "Edit"
-        destroy: "Destroy"
-        you_sure: "Are you sure?"
-
-      error: "brohibiting new category to be created"
-      categories: "Categories"
-
-      back: "Back"
-      none: "None"
-      details: "Details"
-      content: "Content"
 
   users:
     new:
@@ -77,7 +49,6 @@ en:
         btn_submit: "Create my account"
         have_account: "If already have account  "
         login: "Log In"
-
 
     show:
       not_found_user: "User not found!"
