@@ -1,13 +1,4 @@
 vi:
-  flashes:
-    not_found: "Xin lỗi không tìm thấy"
-    delete_success: "Xóa thành công"
-    delete_failed: "Đã xảy ra lỗi khi xóa"
-    update_success: "Cập nhật thành công"
-    update_failed: "Cập nhật thất bại"
-    create_success: "Tạo mới thành công"
-    create_failed: "Không tạo mới được"
-    please_login: "Vui lòng hãy đăng nhập."
   admin:
     products:
       not_found: "Sản phẩm không tồn tại"
@@ -40,27 +31,19 @@ vi:
         btn_submit: "Thêm"
       create:
         success: "Thêm sản phẩm thành công!"
-        error: "Thêm sản phẩm thất bại. Vui lòng thử lại!"
-
-    categories:
-      index:
-        categories: "Danh mục sản phẩm"
-        name: "Tên: "
-        parent: "Danh mục cha: "
-        new_category: "Tạo danh mục mới"
+        failed: "Thêm sản phẩm thất bại. Vui lòng thử lại!"
       edit:
-        editing: "Chỉnh sửa danh mục sản phẩm"
-
-      new:
-        title: "Tạo danh mục mới"
-
-      form:
-        category_name: "Tên danh mục"
-        parent: "Chọn loại danh mục"
-        back: "Quay lại"
-        submit: "Thêm"
-
-      category:
-        edit: "Chỉnh sửa"
-        destroy: "Xóa"
-        you_sure: "Bạn chắc chứ?"
+        title: "Sửa sản phẩm"
+        btn_submit: "Lưu thay đổi"
+        key: "Cập nhật"
+        value: "Sản phẩm"
+      update:
+        success: "Cập nhât sản phẩm thành công!"
+        failed: "Cập nhật sản phẩm thất bại. Vui lòng thử lại!"
+      destroy:
+        success: "Xóa sản phẩm thất bại!"
+        failed: "Xóa sản phẩm thất bại. Vui lòng thử lại!"
+      product:
+        edit: "Sửa"
+        delete: "Xóa"
+        confirm: "Bạn chắc chắn muốn xóa?"

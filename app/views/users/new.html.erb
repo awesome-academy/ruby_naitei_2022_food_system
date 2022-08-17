@@ -10,27 +10,26 @@
       <h1><%= t(".title") %></h1>
       <br>
         <%= form_for(@user) do |f| %>
-          <%= render "shared/error_messages" %>
-
           <div class="form-outline mb-4">
             <%= f.label :name, t(".form.name") %>
             <%= f.text_field :name, class: "form-control" %>
+            <%= raw error_message(@user, :name) %>
           </div>
-
           <div class="form-outline mb-4">
             <%= f.label :email, t(".form.email") %>
             <%= f.email_field :email, class: "form-control" %>
+            <%= raw error_message(@user, :email) %>
           </div>
-
-
           <div class="form-outline mb-4">
             <%= f.label :password, t(".form.password") %>
             <%= f.password_field :password, class: "form-control" %>
+            <%= raw error_message(@user, :password) %>
           </div>
 
           <div class="form-outline mb-4">
             <%= f.label :password_confirmation, t(".form.password_confirmation") %>
             <%= f.password_field :password_confirmation, class: "form-control" %>
+            <%= raw error_message(@user, :password_confirmation) %>
           </div>
 
           <div class="submit">

@@ -1,6 +1,6 @@
 <div class = "container">
   <h1><%= t ".categories" %></h1>
-
+  <%= link_to t(".new_category"), new_admin_category_path, class: "btn btn-outline-primary" %>
   <table class="table">
     <thead>
       <tr>
@@ -14,5 +14,4 @@
   </table>
   <%== pagy_bootstrap_nav(@pagy) %>
   <br>
-  <%= link_to t(".new_category"), new_admin_category_path, class: "btn btn-outline-primary" %>
 </div>

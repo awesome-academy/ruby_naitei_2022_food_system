@@ -14,7 +14,7 @@ class UsersController < ApplicationController
       flash[:success] = t ".signup_success"
       redirect_to root_path
     else
-      flash[:error] = t "shared.error"
+      flash.now[:error] = t ".signup_failed"
       render :new
     end
   end

@@ -6,6 +6,7 @@ module SessionsHelper
   def handle_log_in user
     log_in user
     params[:session][:remember_me] == "1" ? remember(user) : forget(user)
+    flash[:success] = t ".success"
     if user.admin?
       redirect_to admin_root_path
     else

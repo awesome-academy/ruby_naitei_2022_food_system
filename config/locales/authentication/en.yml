@@ -1,0 +1,27 @@
+en:
+  sessions:
+    new:
+      title: "Sign in"
+      btn_submit: "Sign in"
+      email: "Email"
+      password: "Password"
+      remember_me: "Remember me"
+      new_user: "Don't have an account?"
+      signupnow: "Sign up now!"
+    create:
+      invalid: "Email or password is incorrect"
+      success: "Welcome to Foodee"
+
+  users:
+    new:
+      title: "Sign Up"
+      form:
+        name: "Name"
+        email: "Email"
+        password: "Password"
+        password_confirmation: "Password confirmation"
+        btn_submit: "Sign up"
+        have_account: "Already have an account?"
+        login: "Sign in now!"
+    create:
+        signup_failed: "Sign up failed!"

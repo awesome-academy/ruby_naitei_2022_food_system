@@ -1,0 +1,27 @@
+vi:
+  sessions:
+    new:
+      title: "Đăng nhập"
+      btn_submit: "Đăng nhập"
+      email: "Email"
+      password: "Mật khẩu"
+      remember_me: "Ghi nhớ đăng nhập"
+      new_user: "Bạn chưa có tài khoản"
+      signupnow: "Đăng ký ngay!"
+    create:
+      invalid: "Email hoặc mật khẩu không đúng"
+      success: "Chào mừng đến với Foodee"
+
+  users:
+    new:
+      title: "Đăng ký"
+      form:
+        name: "Tên"
+        email: "Email"
+        password: "Mật khẩu"
+        password_confirmation: "Xác nhận mật khẩu"
+        btn_submit: "Đăng ký"
+        have_account: "Bạn đã có tài khoản?"
+        login: "Đăng nhập ngay!"
+    create:
+      signup_failed: "Đăng ký thất bại!"

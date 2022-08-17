@@ -13,10 +13,10 @@ class Admin::CategoriesController < Admin::AdminController
 
   def update
     if @category.update category_params
-      flash[:success] = t "flashes.update_success"
-      redirect_to admin_categories_url
+      flash[:success] = t ".update_success"
+      redirect_to admin_categories_path
     else
-      flash[:danger] = t "flashes.update_failed"
+      flash.now[:error] = t ".update_failed"
       render :edit
     end
   end
@@ -24,21 +24,21 @@ class Admin::CategoriesController < Admin::AdminController
   def create
     @category = Category.new category_params
     if @category.save
-      flash[:success] = t "flashes.create_success"
+      flash[:success] = t ".create_success"
       redirect_to admin_categories_path
     else
-      flash[:danger] = t "flashes.create_failed"
+      flash.now[:error] = t ".create_failed"
       render :new
     end
   end
 
   def destroy
     if @category.destroy
-      flash[:success] = t "flashes.delete_success"
+      flash[:success] = t ".delete_success"
     else
-      flash[:danger] = t "flashes.delete_failed"
+      flash[:error] = t ".delete_failed"
     end
-    redirect_to admin_categories_url
+    redirect_to admin_categories_path
   end
 
   private
@@ -50,7 +50,7 @@ class Admin::CategoriesController < Admin::AdminController
     @category = Category.find_by id: params[:id]
     return if @category
 
-    flash[:danger] = t "flashes.not_found"
-    redirect_to admin_categories_url
+    flash[:error] = t ".not_found"
+    redirect_to admin_categories_path
   end
 end
