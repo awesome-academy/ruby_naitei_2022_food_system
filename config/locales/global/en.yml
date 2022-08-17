@@ -10,6 +10,7 @@ en:
       sidebar:
         categories: "Categories"
         products: "Products"
+        users: "Users"
       header:
         en: "Tiếng Anh"
         vi: "Tiếng Việt"

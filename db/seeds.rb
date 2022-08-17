@@ -26,4 +26,20 @@ User.create!(name: "admin",
              email: "admin@gmail.com",
              password: "12341234",
              password_confirmation: "12341234",
+             phone: "0123456782",
              admin: true)
+
+10.times do |n|
+  name = Faker::Name.name;
+  email = Faker::Internet.email(name: name)
+  password = "12345678"
+  address = Faker::Address.full_address
+  phone = Faker::PhoneNumber.cell_phone_in_e164
+  User.create!(name: name,
+              email: email,
+              password: password,
+              password_confirmation: password,
+              address: address,
+              phone: phone,
+              admin: false)
+end

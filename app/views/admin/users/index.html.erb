@@ -1,0 +1,28 @@
+<div class="content">
+  <%= render "admin/shared/content_header", key: t(".key"), value: t(".value") %>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="card-body">
+        <div class="table-responsive">
+          <table class="table table-hover m-b-0 table-user">
+            <thead>
+              <tr>
+                <th><%= t ".image" %></th>
+                <th><%= t ".name" %></th>
+                <th><%= t ".email" %></th>
+                <th><%= t ".address" %></th>
+                <th><%= t ".phone_number" %></th>
+                <th><%= t ".admin" %></th>
+                <th><%= t ".action" %></th>
+              </tr>
+            </thead>
+            <tbody>
+              <%= render @users %>
+            </tbody>
+          </table>
+        </div>
+        <%== pagy_bootstrap_nav(@pagy) %>
+      </div>
+    </div>
+  </div>
+</div>

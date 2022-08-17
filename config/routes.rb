@@ -10,6 +10,7 @@ Rails.application.routes.draw do
       root to: "dashboard#index"
       resources :categories, except: :show
       resources :products, except: :show
+      resources :users, only: %i(index show destroy)
     end
   end
 end

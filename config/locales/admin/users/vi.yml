@@ -1,0 +1,22 @@
+vi:
+  admin:
+    users:
+      not_found: "Không tìm thấy người dùng"
+      index:
+        key: "Tất cả"
+        value: "Người dùng"
+        image: "Image"
+        name: "Tên"
+        email: "Email"
+        address: "Địa chỉ"
+        phone_number: "Số điện thoại"
+        admin: "Admin"
+        action: "Hàng động"
+      show:
+        key: "Thông tin "
+        value: "người dùng"
+      destroy:
+        delete_success: "Xóa thành công"
+        delete_failed: "Đã xảy ra lỗi khi xóa"
+      user:
+        you_sure: "Bạn có chắc không?"
