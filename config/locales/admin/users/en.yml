@@ -1,0 +1,22 @@
+en:
+  admin:
+    users:
+      not_found: "User not found"
+      index:
+        key: "All"
+        value: "Users"
+        image: "Image"
+        name: "Name"
+        email: "Email"
+        address: "Address"
+        phone_number: "Phone number"
+        admin: "Admin"
+        action: "Action"
+      show:
+        key: "User"
+        value: "information"
+      destroy:
+        delete_success: "Successfully deleted"
+        delete_failed: "Error occured during deletion"
+      user:
+        you_sure: "Are you sure?"

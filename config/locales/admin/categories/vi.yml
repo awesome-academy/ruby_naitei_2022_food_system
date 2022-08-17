@@ -3,15 +3,20 @@ vi:
   admin:
     categories:
       index:
-        categories: "Danh mục sản phẩm"
+        key: "Tất cả"
+        value: "Danh mục"
         name: "Tên: "
         parent: "Danh mục cha: "
         new_category: "Tạo danh mục mới"
       edit:
-        editing: "Chỉnh sửa danh mục sản phẩm"
+        title: "Chỉnh sửa danh mục sản phẩm"
+        key: "Chỉnh sửa"
+        value: "danh mục"
         btn_submit: "Lưu thay đổi"
       new:
-        title: "Tạo danh mục mới"
+        title: "Danh mục mới"
+        key: "Tạo"
+        value: "danh mục mới"
         btn_submit: "Thêm danh mục"
       create:
         create_success: "Tạo mới thành công"

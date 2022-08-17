@@ -3,15 +3,20 @@ en:
   admin:
     categories:
       index:
+        key: "All"
+        value: "Categories"
         name: "Name: "
         parent: "Parent category: "
         new_category: "New category"
-        categories: "Categories"
       edit:
-        editing: "Editing categories"
+        title: "Categories edit"
+        key: "Editing"
+        value: "Categories"
         btn_submit: "Save changes"
       new:
-        title: "New category"
+        title: "New Categories"
+        key: "Add"
+        value: "Categories"
         btn_submit: "Add category"
       create:
         create_success: "Successfully created"

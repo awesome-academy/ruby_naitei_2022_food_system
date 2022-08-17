@@ -6,6 +6,7 @@ user:
   password_max: 20
   email_pattern: !ruby/regexp /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
   gavatar_size: 80
+  gavatar_size50: 50
 
 category:
   item: 15
@@ -23,4 +24,4 @@ product:
 date_format: "%Y-%m-%d"
 
 pagy:
-  items: 10
+  items: 15
