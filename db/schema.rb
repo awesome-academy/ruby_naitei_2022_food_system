@@ -54,6 +54,7 @@ ActiveRecord::Schema.define(version: 2022_08_15_140448) do
     t.integer "quality"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["order_id", "product_id"], name: "index_order_details_on_order_id_and_product_id", unique: true
     t.index ["order_id"], name: "index_order_details_on_order_id"
     t.index ["product_id"], name: "index_order_details_on_product_id"
   end
@@ -109,8 +110,6 @@ ActiveRecord::Schema.define(version: 2022_08_15_140448) do
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
   add_foreign_key "active_storage_variant_records", "active_storage_blobs", column: "blob_id"
-  add_foreign_key "order_details", "orders"
-  add_foreign_key "order_details", "products"
   add_foreign_key "orders", "users"
   add_foreign_key "products", "categories"
   add_foreign_key "ratings", "products"

@@ -10,14 +10,10 @@
     <%= javascript_pack_tag "application", "data-turbolinks-track": "reload" %>
   </head>
 
-  <body class="home-page home-01" >
-    <main id="main">
-      <div class="container">
-        <%= raw custom_bootstrap_flash %>
-        <%= render "customer/shared/header" %>
-        <%= yield %>
-        <%= render "customer/shared/footer" %>
-      </div>
-    </main>
+  <body>
+    <div class="container">
+      <%= raw custom_bootstrap_flash %>
+      <%= yield %>
+    </div>
   </body>
 </html>
