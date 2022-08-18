@@ -1,0 +1,18 @@
+en:
+  customer:
+    shared:
+      header:
+        login: "Log in"
+        logout: "Log out"
+        signup: "Sign up"
+        languages: "Languages"
+        cart: "CART"
+        itmes: "items"
+        profile: "Profile"
+        my_orders: "My orders"
+      navbar:
+        about: "About Us"
+        menu: "Menu"
+        cart: "Cart"
+        checkout: "Checkout"
+        contact: "Contact"

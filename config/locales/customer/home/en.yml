@@ -1,0 +1,7 @@
+en:
+  customer:
+    home:
+      index:
+        best_selling: "Best selling"
+        latest: "Latest products"
+        recommend: "Recommend for you"

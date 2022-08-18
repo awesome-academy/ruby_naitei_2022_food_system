@@ -32,3 +32,13 @@ toastr.options = {
   showMethod: "fadeIn",
   hideMethod: "fadeOut",
 };
+
+require("js/customer/jquery-1.12.4.minb8ff")
+require("js/customer/jquery-ui-1.12.4.minb8ff")
+require("js/customer/bootstrap.min")
+require("js/customer/jquery.flexslider")
+require("js/customer/chosen.jquery.min")
+require("js/customer/owl.carousel.min")
+require("js/customer/jquery.countdown.min")
+require("js/customer/jquery.sticky")
+require("js/customer/functions")
