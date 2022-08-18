@@ -1,0 +1,7 @@
+vi:
+  customer:
+    home:
+      index:
+        best_selling: "Bán chạy nhất"
+        latest: "Mới nhất"
+        recommend: "Đề xuất cho bạn"

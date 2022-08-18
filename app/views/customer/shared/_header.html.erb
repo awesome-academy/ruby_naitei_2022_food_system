@@ -1,0 +1,133 @@
+<!-- mobile menu -->
+<div class="mercado-clone-wrap">
+  <div class="mercado-panels-actions-wrap">
+    <a class="mercado-close-btn mercado-close-panels" href="#">x</a>
+  </div>
+  <div class="mercado-panels"></div>
+</div>
+
+<header id="header" class="header header-style-1">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="topbar-menu-area">
+        <div class="container">
+          <div class="topbar-menu left-menu">
+            <ul>
+              <li class="menu-item" >
+                <a title="Hotline: (+123) 456 789" href="#" ><span class="icon label-before fa fa-mobile"></span>Hotline: (+123) 456 789</a>
+              </li>
+            </ul>
+          </div>
+          <div class="topbar-menu right-menu">
+            <ul>
+              <li class="menu-item lang-menu menu-item-has-children parent">
+                <a title="English" href="#"><i class="fa-solid fa-earth-americas"></i> <%= t ".languages" %><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                <ul class="submenu lang" >
+                  <li class="menu-item" >
+                    <%= link_to "vi", locale: :vi do %>
+                      <span class="img label-before">
+                        <img src="https://api.iconify.design/circle-flags:vn.svg" alt="vietnamese" class="mr-3 p-2">
+                      </span>
+                      vietnamese
+                    <% end %>
+                  </li>
+                  <li class="menu-item" >
+                    <%= link_to "en", locale: :en do %>
+                      <span class="img label-before">
+                        <img src="https://api.iconify.design/circle-flags:us.svg" alt="english" class="mr-3 p-2">
+                      </span>
+                      english
+                    <% end %>
+                  </li>
+                </ul>
+              </li>
+              <% if logged_in? %>
+                  <li class="menu-item lang-menu menu-item-has-children parent">
+                    <a title="English" href="#"> <%= gravatar_for(current_user, size: 20) %> <%= current_user.name %><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                    <ul class="submenu lang" >
+                      <li class="menu-item" >
+                        <%= link_to t(".profile"), "#" %>
+                      </li>
+                      <li class="menu-item" >
+                        <%= link_to t(".my_orders"), "#" %>
+                      </li>
+                      <li class="menu-item" >
+                        <%= link_to t(".logout"), logout_path, method: :delete %>
+                      </li>
+                    </ul>
+                  </li>
+              <% else %>
+                <li class="menu-item" >
+                  <%= link_to t(".login"), login_path %>
+                  <%= link_to t(".signup"), signup_path %>
+                </li>
+              <% end %>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="mid-section main-info-area">
+
+          <div class="wrap-logo-top left-section">
+            <a href="index.html" class="link-to-home"><img src="assets/images/logo-top-1.png" alt="mercado"></a>
+          </div>
+
+          <div class="wrap-search center-section">
+            <div class="wrap-search-form">
+              <form action="#" id="form-search-top" name="form-search-top">
+                <input type="text" name="search" value="" placeholder="Search here...">
+                <button form="form-search-top" type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
+                <div class="wrap-list-cate">
+                  <input type="hidden" name="product-cate" value="0" id="product-cate">
+                  <a href="#" class="link-control">All Category</a>
+                  <ul class="list-cate">
+                    <li class="level-0">All Category</li>
+                    <li class="level-1">-Electronics</li>
+                    <li class="level-2">Batteries & Chargens</li>
+                    <li class="level-2">Headphone & Headsets</li>
+                    <li class="level-2">Mp3 Player & Acessories</li>
+                    <li class="level-1">-Smartphone & Table</li>
+                    <li class="level-2">Batteries & Chargens</li>
+                    <li class="level-2">Mp3 Player & Headphones</li>
+                    <li class="level-2">Table & Accessories</li>
+                    <li class="level-1">-Electronics</li>
+                    <li class="level-2">Batteries & Chargens</li>
+                    <li class="level-2">Headphone & Headsets</li>
+                    <li class="level-2">Mp3 Player & Acessories</li>
+                    <li class="level-1">-Smartphone & Table</li>
+                    <li class="level-2">Batteries & Chargens</li>
+                    <li class="level-2">Mp3 Player & Headphones</li>
+                    <li class="level-2">Table & Accessories</li>
+                  </ul>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <div class="wrap-icon right-section">
+            <div class="wrap-icon-section minicart">
+              <a href="#" class="link-direction">
+                <i class="fas fa-cart-arrow-down"></i>
+                <div class="left-info">
+                  <span class="index">4 <%= t ".items" %></span>
+                  <span class="title"><%= t ".cart" %></span>
+                </div>
+              </a>
+            </div>
+            <div class="wrap-icon-section show-up-after-1024">
+              <a href="#" class="mobile-navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <%= render "customer/shared/navbar" %>
+    </div>
+  </div>
+</header>

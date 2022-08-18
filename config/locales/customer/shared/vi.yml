@@ -1,0 +1,18 @@
+vi:
+  customer:
+    shared:
+      header:
+        login: "Đăng nhập"
+        logout: "Đăng xuất"
+        signup: "Đăng ký"
+        languages: "Ngôn ngữ"
+        cart: "GIỎ HÀNG"
+        itmes: "món"
+        profile: "Hồ sơ"
+        my_orders: "Đơn của tôi"
+      navbar:
+        about: "Về chúng tôi"
+        menu: "Menu"
+        cart: "Giỏ hàng"
+        checkout: "Thanh toán"
+        contact: "Liên hệ"

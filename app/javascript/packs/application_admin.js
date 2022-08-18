@@ -7,9 +7,9 @@ import Turbolinks from "turbolinks";
 import * as ActiveStorage from "@rails/activestorage";
 import "channels";
 
-require("js/adminlte.min");
-require("js/bootstrap.bundle.min");
-require("js/jquery.min");
+require("js/admin/adminlte.min");
+require("js/admin/bootstrap.bundle.min");
+require("js/admin/jquery.min");
 
 Rails.start();
 Turbolinks.start();
