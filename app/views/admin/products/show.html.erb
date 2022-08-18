@@ -1,0 +1,50 @@
+<% provide :title, @product.name %>
+<div class="single">
+  <div class="container">
+    <h4 class="pro-d-title">
+      <strong> <%= t ".information" %></strong>
+    </h4>
+    <div class="card card-solid">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-12 col-sm-6">
+            <div class="col-12">
+              <%= image_tag @product.images[0], class: "product-image" if @product.images.attached? %>
+            </div>
+            <div class="col-12 product-image-thumbs">
+              <% @product.images.each do |image|%>
+                <li data-thumb="<%= url_for image %>" style="list-style-type: none;" >
+                  <div class="product-image-thumb"><%= image_tag(image, class: "img-responsive") %></div>
+                </li>
+              <% end %>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6">
+            <h4 class="my-3"><%= @product.category.name %></h4>
+            <h1 class="my-3"><strong><%= @product.name %></strong></h1>
+            <p><%= @product.description %></p>
+            <hr>
+            <div class="bg-gray py-2 px-3 mt-4">
+              <h2 class="mb-0">
+                 <%= t ".price" %> <%= number_to_currency @product.price %>
+              </h2>
+              <h4 class="mt-0">
+                <small><%= t ".quantity" %> <%= @product.stock_quantity %></small>
+              </h4>
+            </div>
+            <div class="mt-4">
+                <p><%= t ".created_at" %><%= @product.created_at.strftime(Settings.date_format) %></p>
+                <p><%= t ".updated_at" %><%= @product.updated_at.strftime(Settings.date_format) %></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="d-grid gap-2 d-md-block" style="margin-left: 20px;" >
+        <%= link_to t(".back"), admin_products_path, class: "btn btn-danger" %>
+        <%= link_to t(".edit") , edit_admin_product_path(@product), class: "btn btn-primary" %>
+      </div>
+      <br>
+    </div>
+  </div>
+</div>

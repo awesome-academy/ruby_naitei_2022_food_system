@@ -9,7 +9,7 @@ Rails.application.routes.draw do
     namespace :admin do
       root to: "dashboard#index"
       resources :categories, except: :show
-      resources :products, except: :show
+      resources :products
       resources :users, only: %i(index show destroy)
     end
   end

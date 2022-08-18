@@ -8,6 +8,7 @@ en:
         name: "Name: "
         parent: "Parent category: "
         new_category: "New category"
+        actions: "Actions"
       edit:
         title: "Categories edit"
         key: "Editing"
