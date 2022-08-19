@@ -9,6 +9,7 @@ vi:
         quantity: "Số lượng hiện có"
         image: "Hình ảnh cho sản phầm"
         choose: "Chọn danh mục"
+        back: "Quay lại"
       index:
         title: "Tất cả sản phẩm"
         key: "Tất cả"
@@ -22,8 +23,6 @@ vi:
         created_at: "Được tạo lúc"
         updated_at: "Cập nhật lúc"
         actions: "Thao tác"
-        edit: "Sửa"
-        delete: "Xóa"
       new:
         title: "Thêm sản phẩm"
         key: "Thêm"
@@ -41,9 +40,17 @@ vi:
         success: "Cập nhât sản phẩm thành công!"
         failed: "Cập nhật sản phẩm thất bại. Vui lòng thử lại!"
       destroy:
-        success: "Xóa sản phẩm thất bại!"
+        success: "Xóa sản phẩm thành công!"
         failed: "Xóa sản phẩm thất bại. Vui lòng thử lại!"
       product:
         edit: "Sửa"
         delete: "Xóa"
         confirm: "Bạn chắc chắn muốn xóa?"
+      show:
+        information: "Thông tin sản phẩm"
+        price: "Giá: "
+        quantity: "Số lượng kho: "
+        edit: "Sửa thông tin"
+        back: "Quay lại"
+        created_at: "Được tạo lúc: "
+        updated_at: "Cập nhật lúc: "

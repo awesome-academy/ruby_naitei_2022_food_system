@@ -9,6 +9,7 @@ en:
         quantity: "Product stock quantity"
         image: "Prodcuts Images"
         choose: "Choose a category"
+        back: "Back"
       index:
         title: "All products"
         key: "All"
@@ -22,8 +23,6 @@ en:
         created_at: "Created at"
         updated_at: "Updated at"
         actions: "Actions"
-        edit: "Edit"
-        delete: "Delete"
       new:
         title: "New product"
         key: "Add"
@@ -47,3 +46,11 @@ en:
         edit: "Edit"
         delete: "Delete"
         confirm: "Are you sure to delete?"
+      show:
+        information: "Information"
+        price: "Price: "
+        quantity: "Stock quantity: "
+        back: "Back"
+        edit: "Edit Information"
+        created_at: "Created at: "
+        updated_at: "Updated at: "

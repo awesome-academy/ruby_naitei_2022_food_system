@@ -8,6 +8,7 @@ vi:
         name: "Tên: "
         parent: "Danh mục cha: "
         new_category: "Tạo danh mục mới"
+        actions: "Thao tác"
       edit:
         title: "Chỉnh sửa danh mục sản phẩm"
         key: "Chỉnh sửa"

@@ -7,7 +7,17 @@
   <td><%= product.created_at.strftime(Settings.date_format) %></td>
   <td><%= product.updated_at.strftime(Settings.date_format) %></td>
   <td>
-    <%= link_to t(".edit"), edit_admin_product_path(product), class: "btn btn-primary" %>
-    <%= link_to t(".delete"), [:admin, product], method: :delete, class: "btn btn-danger", data: {confirm: t(".confirm")} %>
+    <%= link_to [:admin, product], class: "btn btn-icon btn-success" do %>
+      <i class="fas fa-eye"></i>
+    <% end %>
+    <%= link_to edit_admin_product_path(product), class: "btn btn-primary" do %>
+      <i class="fa-solid fa-pen-to-square"></i>
+    <% end %>
+    <div class="btn btn-danger">
+      <%= link_to [:admin, product], method: :delete, class: "delete-product",
+                                    data: {confirm: t(".confirm")}, remote: :true do %>
+        <i class="fa-solid fa-trash", style="color: white;"></i>
+      <% end %>
+    </div>
   </td>
 </tr>
