@@ -6,4 +6,10 @@ class HomeController < ApplicationController
                           .includes(:products)
     render "customer/home/index"
   end
+
+  def menu
+    @pagy, @products = pagy(Product.search_by_name(params[:search]),
+                            item: Settings.pagy.item)
+    render "menu/index"
+  end
 end

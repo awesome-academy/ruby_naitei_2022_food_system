@@ -11,6 +11,8 @@ en:
         categories: "Categories"
         products: "Products"
         users: "Users"
+        mywebsite: "My website"
+        logout: "Logout"
       header:
         en: "Tiếng Anh"
         vi: "Tiếng Việt"

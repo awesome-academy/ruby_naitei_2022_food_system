@@ -10,6 +10,9 @@ vi:
         itmes: "món"
         profile: "Hồ sơ"
         my_orders: "Đơn của tôi"
+        manage: "Trang quản lý"
+        search: "Tìm kiếm"
+        search_here: "Tìm kiếm ở đây..."
       navbar:
         about: "Về chúng tôi"
         menu: "Menu"

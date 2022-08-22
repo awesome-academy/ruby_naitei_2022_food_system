@@ -41,19 +41,30 @@
                   </li>
                 </ul>
               </li>
-              <% if logged_in? %>
+                <% if logged_in? %>
                   <li class="menu-item lang-menu menu-item-has-children parent">
-                    <a title="English" href="#"> <%= gravatar_for(current_user, size: 20) %> <%= current_user.name %><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                    <a title="English" href="#"> <%= gravatar_for(current_user, size: 20) %> <%= current_user.name %>
+                      <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </a>
                     <ul class="submenu lang" >
-                      <li class="menu-item" >
-                        <%= link_to t(".profile"), "#" %>
-                      </li>
-                      <li class="menu-item" >
-                        <%= link_to t(".my_orders"), "#" %>
-                      </li>
-                      <li class="menu-item" >
-                        <%= link_to t(".logout"), logout_path, method: :delete %>
-                      </li>
+                      <% if @current_user.admin %>
+                        <li class="menu-item" >
+                            <%= link_to t(".manage"), admin_root_path%>
+                        </li>
+                        <li class="menu-item" >
+                          <%= link_to t(".logout"), logout_path, method: :delete %>
+                        </li>
+                      <% else %>
+                        <li class="menu-item" >
+                          <%= link_to t(".profile"), user_path %>
+                        </li>
+                        <li class="menu-item" >
+                          <%= link_to t(".my_orders"), "#" %>
+                        </li>
+                        <li class="menu-item" >
+                          <%= link_to t(".logout"), logout_path, method: :delete %>
+                        </li>
+                      <% end %>
                     </ul>
                   </li>
               <% else %>
@@ -71,41 +82,19 @@
         <div class="mid-section main-info-area">
 
           <div class="wrap-logo-top left-section">
-            <a href="index.html" class="link-to-home"><img src="assets/images/logo-top-1.png" alt="mercado"></a>
+            <%= link_to root_path do %>
+              <% image_tag "logo.jpg", alt:"Logo", class:"brand-image img-circle elevation-3", style:"height: 120px; width: 120px;" %>
+            <% end %>
           </div>
-
           <div class="wrap-search center-section">
-            <div class="wrap-search-form">
-              <form action="#" id="form-search-top" name="form-search-top">
-                <input type="text" name="search" value="" placeholder="Search here...">
-                <button form="form-search-top" type="button"><i class="fas fa-search" aria-hidden="true"></i></button>
-                <div class="wrap-list-cate">
-                  <input type="hidden" name="product-cate" value="0" id="product-cate">
-                  <a href="#" class="link-control">All Category</a>
-                  <ul class="list-cate">
-                    <li class="level-0">All Category</li>
-                    <li class="level-1">-Electronics</li>
-                    <li class="level-2">Batteries & Chargens</li>
-                    <li class="level-2">Headphone & Headsets</li>
-                    <li class="level-2">Mp3 Player & Acessories</li>
-                    <li class="level-1">-Smartphone & Table</li>
-                    <li class="level-2">Batteries & Chargens</li>
-                    <li class="level-2">Mp3 Player & Headphones</li>
-                    <li class="level-2">Table & Accessories</li>
-                    <li class="level-1">-Electronics</li>
-                    <li class="level-2">Batteries & Chargens</li>
-                    <li class="level-2">Headphone & Headsets</li>
-                    <li class="level-2">Mp3 Player & Acessories</li>
-                    <li class="level-1">-Smartphone & Table</li>
-                    <li class="level-2">Batteries & Chargens</li>
-                    <li class="level-2">Mp3 Player & Headphones</li>
-                    <li class="level-2">Table & Accessories</li>
-                  </ul>
-                </div>
-              </form>
+            <div class="form-group">
+                <%= form_with url: menu_path, method: :get, class: "form-inline form_search" do |f| %>
+                  <%= f.text_field :search, class: "form-control", placeholder: t(".search_here") %>
+                  <%= f.submit t(".search"), class:"btn btn-outline-primary" %>
+                <% end %>
+              <tr>
             </div>
           </div>
-
           <div class="wrap-icon right-section">
             <div class="wrap-icon-section minicart">
               <a href="#" class="link-direction">
