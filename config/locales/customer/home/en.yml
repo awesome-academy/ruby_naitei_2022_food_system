@@ -1,7 +1,10 @@
 en:
   customer:
     home:
-      index:
-        best_selling: "Best selling"
-        latest: "Latest products"
-        recommend: "Recommend for you"
+      partials:
+        latest_products:
+          latest: "Latest products"
+        recommend:
+          recommend: "Recommend for you"
+        product:
+          add_to_cart: "Add to cart"

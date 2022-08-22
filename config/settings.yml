@@ -25,3 +25,6 @@ date_format: "%Y-%m-%d"
 
 pagy:
   items: 15
+
+num_products: 10
+num_categories: 4

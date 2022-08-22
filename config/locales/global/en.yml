@@ -18,3 +18,7 @@ en:
   layouts:
     application_admin:
       foodee: "Fút đê"
+    application:
+      foodee: "Fút đê"
+    authentication:
+      foodee: "Fút đê"

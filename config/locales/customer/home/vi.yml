@@ -1,7 +1,10 @@
 vi:
   customer:
     home:
-      index:
-        best_selling: "Bán chạy nhất"
-        latest: "Mới nhất"
-        recommend: "Đề xuất cho bạn"
+      partials:
+        latest_products:
+          latest: "Mới nhất"
+        recommend:
+          recommend: "Đề xuất cho bạn"
+        product:
+          add_to_cart: "Thêm vào giỏ"

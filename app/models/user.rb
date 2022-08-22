@@ -1,6 +1,8 @@
 class User < ApplicationRecord
   attr_accessor :remember_token
 
+  has_many :orders, dependent: :destroy
+
   validates :name, presence: true,
               length: {maximum: Settings.user.name_max,
                        minimum: Settings.user.name_min}

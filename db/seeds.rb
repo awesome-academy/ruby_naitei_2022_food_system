@@ -3,22 +3,31 @@
 #
 # Examples:
 #
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+#   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
+#   Character.create(name: "Luke", movie: movies.first)
 
+#create categories
 5.times do |n|
   name = "Cate" << Faker::Food.dish
   Category.create!(name: name,
                parent_id: 0)
 end
 
+#create categries include their products
 cates = Category.order(:created_at).take(4)
-10.times do
+15.times do
     name = Faker::Food.dish
     desc = Faker::Food.description
     price = rand(1000..3000)
     qty = rand(50..100)
-    cates.each {|cate| cate.products.create!(name: name, description: desc, price: price, stock_quantity: qty)}
+    cates.each do |cate|
+      prod = cate.products.new(
+        name: name, description: desc, price: price, stock_quantity: qty)
+      prod.save!
+      prod.images.attach(io: File.open("#{Rails.root}/app/assets/images/images/photo#{rand(0..2)}.jpg"),
+                                        filename: "photo#{rand(0..2)}.jpg",
+                                        content_type: "image/jpg")
+    end
 end
 # Create a main sample user.
 User.create!(name: "admin",
@@ -27,7 +36,7 @@ User.create!(name: "admin",
              password_confirmation: "12341234",
              phone: "0123456782",
              admin: true)
-
+#crate user
 10.times do |n|
   name = Faker::Name.name;
   email = Faker::Internet.email(name: name)
@@ -41,4 +50,29 @@ User.create!(name: "admin",
               address: address,
               phone: phone,
               admin: false)
+end
+
+# create orders
+users = User.take(4)
+users.each do |user|
+  #each user order 5 times
+  5.times do |n|
+    order = user.orders.create!(
+      user_email: user.email,
+      user_address: user.address,
+      user_phone: user.phone,
+      note: Faker::Lorem.sentence(word_count: rand(2..8)),
+      status: rand(0..3)
+    )
+    #each order have 1-4 products
+    rand(1..4).times do |n|
+      product = Product.where(id:n+2).pluck :id, :price
+      qty = rand(1..3)
+      order.order_details.create!(
+        product_id: product[0][0],
+        price: product[0][1],
+        quality: qty
+      )
+    end
+  end
 end
