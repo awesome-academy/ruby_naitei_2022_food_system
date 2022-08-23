@@ -1,0 +1,64 @@
+<main class="ml-4 mr-4">
+  <div class="container-fluid px-4">
+    <div class="row g-0" style="padding-top:20px; padding-bottom:20px;">
+      <div class="col-sm-6 col-md-8">
+        <%= link_to t(".back"), admin_orders_path, class: "btn btn-danger"%>
+      </div>
+    </div>
+    <% if @order_details.present? %>
+      <div class="x_content">
+        <div class="infor_order row">
+          <div class="col-md-2 infor_col">
+            <h5><%= t ".name" %>:</h5>
+            <h5><%= t ".phone" %>:</h5>
+            <h5><%= t ".address" %>:</h5>
+            <h5><%= t ".status" %>:</h5>
+            <h5><%= t ".created_order" %>:</h5>
+          </div>
+          <div class="col-md-8">
+            <h5><%= @order.user.name %></h5>
+            <h5><%= @order.user_phone %></h5>
+            <h5><%= @order.user_address %></h5>
+            <h5>
+              <span class="badge <%= Settings.send(@order.status) %>">
+                <%= t(".#{@order.status}") %>
+              </span>
+            </h5>
+            <h5><%= @order.created_at.strftime(Settings.date_format) %></h5>
+          </div>
+        </div>
+      </div>
+      <h3 class="text-left total-order">
+        <b><%= t ".total" %></b>:
+        <%= total_price(@order) %>
+      </h3>
+      <div class="row">
+        <table class="table table-hover table-bordered ">
+          <thead class="thead-dark">
+            <tr>
+              <th scope="col text-center"><%= t ".image" %></th>
+              <th scope="col"><%= t ".name_product" %></th>
+              <th scope="col"><%= t ".price"%></th>
+              <th scope="col"><%= t ".quatity" %></th>
+              <th scope="col"><%= t ".total_price" %></th>
+            </tr>
+          </thead>
+          <tbody>
+            <% @order_details.each do |order| %>
+              <tr>
+                <td><%= image_tag order.product.images[0] , style:"weight:80px; height:80px;"%></td>
+                <td><%= order.product.name %></td>
+                <td><%= number_to_currency(order.price, locale: :vi) %></td>
+                <td><%= order.quality %></td>
+                <td><%= number_to_currency(order.price*order.quality, locale: :vi) %></td>
+              </tr>
+            <% end %>
+          </tbody>
+        </table>
+        <%== pagy_bootstrap_nav @pagy %>
+      </div>
+    <% else %>
+      <h2><%= t ".no_order" %><h2>
+    <% end %>
+  </div>
+</main>
