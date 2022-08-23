@@ -1,0 +1,41 @@
+en:
+  admin:
+    orders:
+      not_found: "This orders is not exist"
+      index:
+        key: "All"
+        value: "Orders"
+        name: "Name"
+        email: "Email"
+        address: "Address"
+        phone: "Phone number"
+        status: "Status"
+        actions: "Actions"
+        no_order: "You don't have any orders yet"
+        created_order: "Created order day"
+        total_price: "Total price"
+      show:
+        back: "Back"
+        image: "Image"
+        name_product: "Name product"
+        price: "Price"
+        quatity: "Quatity"
+        total_price: "Total price"
+        no_order: "You don't have any orders yet"
+        total: "Total"
+        name: "Name"
+        email: "Email"
+        address: "Address"
+        phone: "Phone number"
+        status: "Status"
+        created_order: "Created order day"
+      destroy:
+        success: "Successfuly deleted!"
+        failed: "Delete product failed. Please try again!"
+      order:
+        confirm: "Are you sure to delete?"
+  status_order:
+    open: "Open"
+    confirmed: "Confirmed"
+    shipping: "Shipping"
+    completed: "Completed"

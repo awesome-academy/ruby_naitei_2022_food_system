@@ -1,0 +1,41 @@
+vi:
+  admin:
+    orders:
+      not_found: "Đơn đặt hàng này không tồn tại"
+      index:
+        key: "Tất cả"
+        value: "Đơn hàng"
+        name: "Tên"
+        address: "Địa chỉ"
+        phone: "Số điện thoại"
+        status: "Trạng thái"
+        action: "Hàng động"
+        no_order: "Bạn chưa có đơn hàng nào"
+        created_order: "Ngày đặt hàng"
+        total_price: "Tổng tiền"
+      show:
+        back: "Quay lại"
+        image: "Hình ảnh"
+        name_product: "Tên sản phẩm"
+        price: "Giá"
+        quatity: "Số lượng"
+        total_price: "Thành tiền"
+        no_order: "Đơn đặt hàng này không tồn tại"
+        total: "Tổng tiền"
+        name: "Tên"
+        email: "Email"
+        address: "Địa chỉ"
+        phone: "Số điện thoại"
+        status: "Trạng thái"
+        created_order: "Ngày đặt hàng"
+        open: "Chờ xác nhận"
+        confirmed: "Đã xác nhận"
+        shipping: "Đang chuyển hàng"
+        completed: "Hoàn thành"
+      order:
+        confirm: "Bạn chắc chắn muốn xóa?"
+  status_order:
+    open: "Chờ xác nhận"
+    confirmed: "Đã xác nhận"
+    shipping: "Đang chuyển hàng"
+    completed: "Hoàn thành"

@@ -55,6 +55,12 @@
                 <% end %>
               </li>
               <li class="nav-item">
+                <%= link_to admin_orders_path, class: "nav-link" do %>
+                  <i class="far fa-circle nav-icon"></i>
+                  <p><%= t ".orders" %></p>
+                <% end %>
+              </li>
+              <li class="nav-item">
                 <%= link_to root_path, class: "nav-link" do %>
                   <i class="fa-solid fa-house-user"></i>
                   <p><%= t ".mywebsite" %></p>

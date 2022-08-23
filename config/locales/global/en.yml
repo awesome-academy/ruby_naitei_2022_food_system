@@ -13,6 +13,7 @@ en:
         users: "Users"
         mywebsite: "My website"
         logout: "Logout"
+        orders: "Orders"
       header:
         en: "Tiếng Anh"
         vi: "Tiếng Việt"
