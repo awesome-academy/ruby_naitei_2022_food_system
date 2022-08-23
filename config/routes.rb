@@ -6,8 +6,9 @@ Rails.application.routes.draw do
     post "/login", to: "sessions#create"
     delete "/logout", to: "sessions#destroy"
     resources :users
-    resources :products, only: :show
     get "/menu", to: "home#menu"
+    resources :products, controller: :home, only: :show
+
     namespace :admin do
       root to: "dashboard#index"
       resources :categories, except: :show

@@ -1,8 +1,9 @@
 <div class="product product-style-2 equal-elem ">
   <div class="product-thumnail">
-    <a href="detail.html" title="<%= product.name %>">
+    <%= link_to product_path product do %>
       <figure><%= image_tag product.images[0], class: "dish-img" %></figure>
-    </a>
+    <% end %>
+
     <div class="wrap-btn">
       <a href="#" class="function-link"><%= t ".add_to_cart" %></a>
     </div>

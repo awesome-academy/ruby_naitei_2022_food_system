@@ -25,7 +25,8 @@ class Product < ApplicationRecord
                            message: :image_format_invalid},
             size: {less_than: Settings.product.image.size_limit,
                    message: :file_size_out_of_range}
-  scope :newest, ->{order(created_at: :desc)}
 
+  scope :newest, ->{order(created_at: :desc)}
   scope :search_by_name, ->(search){where("name LIKE '%#{search}%'")}
+  scope :not_id, ->(id){where.not id: id}
 end
