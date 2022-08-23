@@ -10,6 +10,9 @@ en:
         itmes: "items"
         profile: "Profile"
         my_orders: "My orders"
+        manage: "Admin manage"
+        search: "Search"
+        search_here: "Search here..."
       navbar:
         about: "About Us"
         menu: "Menu"

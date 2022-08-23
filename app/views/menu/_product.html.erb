@@ -1,0 +1,14 @@
+<li class="col-lg-4 col-md-6 col-sm-6 col-xs-6 ">
+  <div class="product product-style-3 equal-elem ">
+    <div class="product-thumnail">
+      <a href="#" title="T-Shirt Raw Hem Organic Boro Constrast Denim">
+        <figure><%= image_tag product.images[0], class: "dish-img" %></figure>
+      </a>
+    </div>
+    <div class="product-info">
+      <a href="#" class="product-name"><span><%= product.name %></span></a>
+      <div class="wrap-price"><span class="product-price"><%= price_format product.price %></span></div>
+      <a href="#" class="btn add-to-cart"><%= t ".add_to_cart" %></a>
+    </div>
+  </div>
+</li>

@@ -11,6 +11,8 @@ vi:
         categories: "Danh mục"
         products: "Sản phẩm"
         users: "Người dùng"
+        mywebsite: "Trang web của tôi"
+        logout: "Đăng xuất"
       header:
         en: "Tiếng Anh"
         vi: "Tiếng Việt"
