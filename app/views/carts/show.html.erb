@@ -1,0 +1,45 @@
+<div class="wrap-breadcrumb">
+  <ul>
+    <li class="item-link"><a href="#" class="link">home</a></li>
+    <li class="item-link"><span>login</span></li>
+  </ul>
+</div>
+<div class=" main-content-area">
+
+  <div class="wrap-iten-in-cart">
+    <h3 class="box-title"><%= t ".products_name" %></h3>
+    <ul class="products-cart">
+      <% if current_cart.blank? %>
+        <div class="row p-5">
+          <h2><%= t ".empty" %></h2>
+        </div>
+      <% else %>
+        <%= render partial: "product", collection: @products %>
+      <% end %>
+    </ul>
+  </div>
+
+  <div class="summary">
+    <div class="order-summary">
+      <h4 class="title-box"><%= t ".order_summary" %></h4>
+      <p class="summary-info"><span class="title"><%= t ".shipping" %></span><b class="index"><%= t ".free_shipping" %></b></p>
+      <p class="summary-info total-info "><span class="title"><%= t ".total" %></span><b class="index"><%= price_format cart_total %></b></p>
+    </div>
+    <div class="checkout-info">
+      <div class="row">
+        <div class="col-md-3">
+          <a class="btn btn-checkout" href="checkout.html"><%= t ".clear_cart" %></a>
+        </div>
+        <div class="col-md-3">
+          <a class="btn btn-checkout" href="checkout.html"><%= t ".update_cart" %></a>
+        </div>
+        <div class="col-md-6">
+          <a class="btn btn-checkout" href="checkout.html"><%= t ".checkout" %></a>
+        </div>
+      </div>
+      <%= link_to menu_path do %>
+        <p class="link-to-shop" href="shop.html"><%= t ".continue" %><i class="fas fa-arrow-circle-right" aria-hidden="true"></i></p>
+      <% end %>
+    </div>
+  </div>
+</div><!--end main content area-->

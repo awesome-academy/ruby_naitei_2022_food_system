@@ -15,7 +15,9 @@
           <% end %>
         </li>
         <li class="menu-item">
-          <a href="cart.html" class="link-term mercado-item-title"><%= t ".cart" %></a>
+          <%= link_to carts_path, class: "link-term mercado-item-title" do %>
+            <%= t ".cart" %>
+          <% end %>
         </li>
         <li class="menu-item">
           <a href="checkout.html" class="link-term mercado-item-title"><%= t ".checkout" %></a>

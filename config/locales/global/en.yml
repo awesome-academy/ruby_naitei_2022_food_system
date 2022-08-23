@@ -25,3 +25,19 @@ en:
       foodee: "Fút đê"
     authentication:
       foodee: "Fút đê"
+
+  carts:
+    create:
+      success: "Add to cart success!"
+      failed: "Add to cart failed!"
+    show:
+      products_name: "Products Name"
+      order_summary: "Order Summary"
+      shipping: "Shipping"
+      total: "Total"
+      clear_cart: "Clear cart"
+      update_cart: "Update cart"
+      checkout: "Check out"
+      continue: "Continue Shopping"
+      free_shipping: "Free Shipping"
+      empty: "Cart is empty"

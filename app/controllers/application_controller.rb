@@ -1,7 +1,8 @@
 class ApplicationController < ActionController::Base
   include Pagy::Backend
   include SessionsHelper
-  before_action :set_locale
+  include CartsHelper
+  before_action :set_locale, :current_cart, :load_products_in_cart
 
   private
   def set_locale

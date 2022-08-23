@@ -42,3 +42,4 @@ require("js/customer/owl.carousel.min")
 require("js/customer/jquery.countdown.min")
 require("js/customer/jquery.sticky")
 require("js/customer/functions")
+require("js/customer/cart");
