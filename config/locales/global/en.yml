@@ -30,6 +30,7 @@ en:
     create:
       success: "Add to cart success!"
       failed: "Add to cart failed!"
+      no_product: "Product is not exist"
     show:
       products_name: "Products Name"
       order_summary: "Order Summary"
@@ -41,3 +42,11 @@ en:
       continue: "Continue Shopping"
       free_shipping: "Free Shipping"
       empty: "Cart is empty"
+    update:
+      success: "Update item success"
+      failed: "Update item failed"
+    destroy:
+      success: "Successful removed"
+      failed: "Remove item failed"
+    clear:
+      success: "Cart is empty now!"

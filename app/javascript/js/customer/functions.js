@@ -357,12 +357,12 @@
 	                    _this.addClass('active');
 	                    _this.parents().siblings('.tab-contents').find('.active').removeClass('active');
 	                    _this.parents().siblings('.tab-contents').find(_this.attr('href')).addClass('active');
-                    }  
+                    }
                 });
             }
 
         },
-
+				
 		mercado_countdown: function() {
 			if($(".mercado-countdown").length > 0){
                 $(".mercado-countdown").each( function(index, el){
