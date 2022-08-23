@@ -1,9 +1,9 @@
 <li class="col-lg-4 col-md-6 col-sm-6 col-xs-6 ">
   <div class="product product-style-3 equal-elem ">
     <div class="product-thumnail">
-      <a href="#" title="T-Shirt Raw Hem Organic Boro Constrast Denim">
+      <%= link_to product_path product do %>
         <figure><%= image_tag product.images[0], class: "dish-img" %></figure>
-      </a>
+      <% end %>
     </div>
     <div class="product-info">
       <a href="#" class="product-name"><span><%= product.name %></span></a>

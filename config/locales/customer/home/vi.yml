@@ -8,3 +8,23 @@ vi:
           recommend: "Đề xuất cho bạn"
         product:
           add_to_cart: "Thêm vào giỏ"
+        related_products:
+          related: "Sản phẩm Liên quan"
+
+    products:
+      show:
+        not_found: "Không tìm thấy!"
+        review: "đánh giá"
+        in_stock: "Trong kho"
+        avai: "Khả dụng:"
+        qty: "Số lượng:"
+        add_cart: "Thêm vào giỏ hàng"
+        description: "mô tả"
+        reviews: "Đánh giá"
+
+        free_ship: "Miễn phí vận chuyển"
+        on_over: "Cho đơn hàng từ 100,000đ"
+        special_offer: "Ưu đãi đăc biệt"
+        gift: "Nhận quà!"
+        support: "Hỗ trợ 24/7"
+        listen: "Luôn luôn lắng nghe khách hàng"

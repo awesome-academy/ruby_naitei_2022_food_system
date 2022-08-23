@@ -8,3 +8,23 @@ en:
           recommend: "Recommend for you"
         product:
           add_to_cart: "Add to cart"
+        related_products:
+          related: "Related Products"
+
+    products:
+      show:
+        not_found: "not found!"
+        review: "review"
+        in_stock: "In Stock"
+        avai: "Availability:"
+        qty: "Quantity:"
+        add_cart: "Add to Cart"
+        description: "description"
+        reviews: "Reviews"
+
+        free_ship: "Free Shipping"
+        on_over: "On Oder Over VND 100,000"
+        special_offer: "Special Offer"
+        gift: "Get a gift!"
+        support: "Support 24/7"
+        listen: "Always listen to customers"

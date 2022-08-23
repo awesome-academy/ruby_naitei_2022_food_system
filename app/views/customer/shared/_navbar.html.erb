@@ -10,7 +10,9 @@
           <% end %>
         </li>
         <li class="menu-item">
-          <a href="shop.html" class="link-term mercado-item-title"><%= t ".menu" %></a>
+          <%= link_to menu_path, class: "link-term mercado-item-title" do %>
+            <%= t ".menu" %>
+          <% end %>
         </li>
         <li class="menu-item">
           <a href="cart.html" class="link-term mercado-item-title"><%= t ".cart" %></a>
