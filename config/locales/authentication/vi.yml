@@ -15,13 +15,28 @@ vi:
   users:
     new:
       title: "Đăng ký"
-      form:
-        name: "Tên"
-        email: "Email"
-        password: "Mật khẩu"
-        password_confirmation: "Xác nhận mật khẩu"
-        btn_submit: "Đăng ký"
-        have_account: "Bạn đã có tài khoản?"
-        login: "Đăng nhập ngay!"
+      btn_submit: "Đăng ký"
+      have_account: "Bạn đã có tài khoản?"
+      login: "Đăng nhập ngay!"
     create:
       signup_failed: "Đăng ký thất bại!"
+    form:
+      name: "Tên"
+      email: "Email"
+      password: "Mật khẩu"
+      password_confirmation: "Xác nhận mật khẩu"
+    edit:
+      title: "Chỉnh sửa thông tin cá nhân"
+      editing: "Chỉnh sửa thông tin cá nhân"
+      btn_submit: "Lưu thay đổi"
+      back: "Quay lại"
+    show:
+      address: "Địa chỉ: "
+      phone_number: "Số điện thoại: "
+      email: "Email: "
+      edit: "Chỉnh sửa thông tin cá nhân"
+      name: "Tên tài khoản: "
+      page: "Thông tin của tôi"
+    update:
+      profile_updated_success: "Cập nhật hồ sơ thành công"
+      profile_updated_failed: "Cập nhật hồ sơ thất bại"

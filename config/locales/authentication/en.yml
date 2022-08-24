@@ -15,13 +15,28 @@ en:
   users:
     new:
       title: "Sign Up"
-      form:
-        name: "Name"
-        email: "Email"
-        password: "Password"
-        password_confirmation: "Password confirmation"
-        btn_submit: "Sign up"
-        have_account: "Already have an account?"
-        login: "Sign in now!"
+      have_account: "Already have an account?"
+      login: "Sign in now!"
+      btn_submit: "Create my account"
     create:
-        signup_failed: "Sign up failed!"
+      signup_failed: "Sign up failed!"
+    form:
+      name: "Name"
+      email: "Email"
+      password: "Password"
+      password_confirmation: "Password confirmation"
+    edit:
+      btn_submit: "Save changes"
+      title: "Edit profile"
+      editing: "Editing"
+      back: "Back"
+    show:
+      address: "Address: "
+      phone_number: "Phone number: "
+      email: "Email: "
+      edit: "Edit Information"
+      name: "User name: "
+      page: "My profile"
+    update:
+      success: "Profile updated success"
+      failed: "Profile updated fails"
