@@ -4,11 +4,25 @@
     <%= f.text_field :name, class: "form-control" %>
     <%= raw error_message(@user, :name) %>
   </div>
+
   <div class="form-outline mb-4">
     <%= f.label :email, t(".email") %>
     <%= f.email_field :email, class: "form-control" %>
     <%= raw error_message(@user, :email) %>
   </div>
+
+  <div class="form-outline mb-4">
+    <%= f.label :phone, t(".phone") %>
+    <%= f.text_field :phone, class: "form-control" %>
+    <%= raw error_message(@user, :phone) %>
+  </div>
+
+  <div class="form-outline mb-4">
+    <%= f.label :address, t(".address") %>
+    <%= f.text_area :address, class: "form-control" %>
+    <%= raw error_message(@user, :address) %>
+  </div>
+
   <div class="form-outline mb-4">
     <%= f.label :password, t(".password") %>
     <%= f.password_field :password, class: "form-control" %>

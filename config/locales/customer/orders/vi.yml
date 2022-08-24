@@ -23,8 +23,36 @@ vi:
         phone: "Số điện thoại"
         status: "Trạng thái"
         created_order: "Ngày đặt hàng"
+        note: "Ghi chú"
+      new:
+        user_inf: "thông tin người đặt hàng"
+        btn_submit: "Đặt hàng"
+        product_inf: "Thông tin sản phẩm"
+        total: "Tổng tiền: "
+        name_product: "Tên sản phẩm"
+        price: "Giá"
+        quantity: "Số lượng"
+        total_price: "Thành tiền"
+        note: "Ghi chú"
+        name: "Tên"
+        address: "Địa chỉ"
+        phone: "Số điện thoại"
+        empty: "Không có sản phẩm nào"
       order:
         view_detail: "Xem chi tiết"
+      thank:
+        title: "Cảm ơn bạn!"
+        text: "Cảm ơn bạn đã đặt hàng tại shop"
+        continue: "Tiếp tục mua hàng"
+
+  orders:
+    new:
+      please_update: "Quý khách vui lòng cập nhật địa chỉ và số điện thoại trước khi đặt hàng"
+    create:
+      success: "Đặt hàng thành công"
+      failed: "Đặt hàng không thành công. Vui lòng thử lại sau"
+      sp: "Sản phẩm: "
+      kdu: " không đủ số lượng. Vui lòng kiểm tra số lượng sản phẩm"
   status_order:
     open: "Chờ xác nhận"
     confirmed: "Đã xác nhận"

@@ -23,8 +23,36 @@ en:
         phone: "Phone number"
         status: "Status"
         created_order: "Created order day"
+        note: "Note"
+      new:
+        user_inf: "Ordering information"
+        btn_submit: "Order"
+        product_inf: "Product Information"
+        total: "Total:"
+        name_product: "Name product"
+        price: "Price"
+        quantity: "Quantity"
+        total_price: "Total price"
+        note: "Note"
+        name: "Name"
+        address: "Address"
+        phone: "Phone number"
+        empty: "Cart is empty"
       order:
         view_detail: "View detail"
+      thank:
+        title: "Thank You!"
+        text: "Thank you for ordering at the shop"
+        continue: "Continue to homepage"
+
+  orders:
+    new:
+      please_update: "Please update your address and phone number before ordering"
+    create:
+      success: "Order success"
+      failed: "Order failed. Please do it try again later"
+      sp: "Product: "
+      kdu: " Not enough quantity. Please check the product quantity"
   status_order:
     open: "Open"
     confirmed: "Confirmed"

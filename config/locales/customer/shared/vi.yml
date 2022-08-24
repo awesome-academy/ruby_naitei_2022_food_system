@@ -17,7 +17,7 @@ vi:
         about: "Về chúng tôi"
         menu: "Menu"
         cart: "Giỏ hàng"
-        checkout: "Thanh toán"
+        order: "Đặt hàng"
         contact: "Liên hệ"
       footer:
        my_account: "Tài khoản của tôi"

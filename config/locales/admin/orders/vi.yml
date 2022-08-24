@@ -39,3 +39,4 @@ vi:
     confirmed: "Đã xác nhận"
     shipping: "Đang chuyển hàng"
     completed: "Hoàn thành"
+    cancelled: "Đã hủy"

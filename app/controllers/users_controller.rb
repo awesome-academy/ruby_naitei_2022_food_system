@@ -36,7 +36,8 @@ class UsersController < ApplicationController
 
   def user_params
     params.require(:user)
-          .permit(:name, :email, :password, :password_confirmation)
+          .permit(:name, :email, :password, :password_confirmation,
+                  :address, :phone)
   end
 
   def find_user_by_id

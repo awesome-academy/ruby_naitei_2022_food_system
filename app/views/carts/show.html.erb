@@ -28,15 +28,11 @@
     <div class="checkout-info">
       <div class="row">
         <div class="col-md-4">
-          <%= link_to t(".clear_cart"), clear_carts_path, class: "btn btn-checkout"  %>
+          <%= link_to t(".clear_cart"), clear_carts_path, class: "btn btn-checkout" %>
         </div>
         <div class="col-md-8">
-          <a class="btn btn-checkout" href="checkout.html"><%= t ".checkout" %></a>
-        </div>
+        <%= link_to t(".checkout"), new_user_order_path(current_user), class:"btn btn-checkout" %>
       </div>
-      <%= link_to menu_path do %>
-        <p class="link-to-shop" href="shop.html"><%= t ".continue" %><i class="fas fa-arrow-circle-right" aria-hidden="true"></i></p>
-      <% end %>
     </div>
   </div>
 </div><!--end main content area-->
