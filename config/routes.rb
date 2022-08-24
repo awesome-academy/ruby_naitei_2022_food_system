@@ -5,7 +5,9 @@ Rails.application.routes.draw do
     get "/login", to: "sessions#new"
     post "/login", to: "sessions#create"
     delete "/logout", to: "sessions#destroy"
-    resources :users
+    resources :users do
+      resources :orders, only: %i(index show)
+    end
     get "/menu", to: "home#menu"
     resources :products, controller: :home, only: :show
     resource :carts

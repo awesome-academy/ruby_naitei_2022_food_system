@@ -1,0 +1,32 @@
+vi:
+  customer:
+    orders:
+      not_found: "Đơn đặt hàng này không tồn tại"
+      index:
+        title: "Licḥ sử mua hàng"
+        name: "Tên"
+        status: "Trạng thái"
+        no_order: "Bạn chưa có đơn hàng nào"
+        create: "Ngày đặt hàng"
+        total: "Tổng tiền"
+      show:
+        back: "Quay lại"
+        order: "Chi tiết đơn hàng"
+        name_product: "Tên sản phẩm"
+        price: "Giá"
+        quantity: "Số lượng"
+        total_price: "Thành tiền"
+        total: "Tổng tiền: "
+        name: "Tên"
+        email: "Email"
+        address: "Địa chỉ"
+        phone: "Số điện thoại"
+        status: "Trạng thái"
+        created_order: "Ngày đặt hàng"
+      order:
+        view_detail: "Xem chi tiết"
+  status_order:
+    open: "Chờ xác nhận"
+    confirmed: "Đã xác nhận"
+    shipping: "Đang chuyển hàng"
+    completed: "Hoàn thành"

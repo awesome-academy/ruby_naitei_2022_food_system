@@ -1,0 +1,32 @@
+en:
+  customer:
+    orders:
+      not_found: "This orders is not exist"
+      index:
+        title: "History order"
+        name: "Name"
+        status: "Status"
+        no_order: "You don't have any orders yet"
+        create: "Created order day"
+        total: "Total price"
+      show:
+        back: "Back"
+        order: "My order detail"
+        back: "Back"
+        name_product: "Name product"
+        price: "Price"
+        quantity: "Quantity"
+        total_price: "Total price"
+        total: "Total: "
+        name: "Name"
+        address: "Address"
+        phone: "Phone number"
+        status: "Status"
+        created_order: "Created order day"
+      order:
+        view_detail: "View detail"
+  status_order:
+    open: "Open"
+    confirmed: "Confirmed"
+    shipping: "Shipping"
+    completed: "Completed"

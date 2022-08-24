@@ -1,0 +1,43 @@
+<div class="breadcrumb-section breadcrumb-bg">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 offset-lg-2 text-center">
+        <div class="breadcrumb-text">
+          <h1><%= t ".title" %></h1>
+        </div>
+      </div>
+    </div>
+  </div>
+<div class="container mt-5">
+  <div class="d-flex justify-content-center row">
+    <div class="col-md-10">
+      <div class="rounded">
+        <div class="table-responsive table-borderless">
+          <% if @orders.any? %>
+          <table class="table">
+            <thead>
+              <tr>
+                  <th><%= t ".name"%></th>
+                  <th><%= t ".status"%></th>
+                  <th><%= t ".total"%></th>
+                  <th><%= t ".create"%></th>
+                  <th></th>
+              </tr>
+            </thead>
+            <tbody class="table-body">
+              <tr class="cell-1">
+                <%= render partial: "customer/orders/order", collection: @orders %>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <%== pagy_bootstrap_nav @pagy %>
+        <% else %>
+          <h1 class="text-center cart-index-title">
+            <%= t ".no_order" %>
+          </h1>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

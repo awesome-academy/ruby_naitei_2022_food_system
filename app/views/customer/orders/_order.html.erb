@@ -1,0 +1,14 @@
+<tr>
+  <td><%= order.user.name %></td>
+  <td>
+    <span class="badge btn <%= Settings.send(order.status) %>">
+      <%= t "status_order.#{order.status}" %>
+    </span>
+    </td>
+    <td><%= total_price(order) %></td>
+    <td><%= order.created_at.strftime(Settings.date_format) %></td>
+    <td><i class="fa fa-ellipsis-h text-black-50"></i></td>
+    <td>
+      <%= link_to t(".view_detail"), user_order_path(current_user, order) , class:"btn btn-primary" %>
+    </td>
+</tr>
