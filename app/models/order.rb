@@ -8,8 +8,6 @@ class Order < ApplicationRecord
     shipping: 2,
     completed: 3
   }
-  validates :phone, numericality: {only_integer: true},
-    length: {maximum: Settings.user.phone_length}
   validates :address, presence: true,
     length: {maximum: Settings.user.high_length}
   scope :newest, ->{order created_at: :desc}

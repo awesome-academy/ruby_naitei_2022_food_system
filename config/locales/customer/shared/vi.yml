@@ -19,3 +19,5 @@ vi:
         cart: "Giỏ hàng"
         checkout: "Thanh toán"
         contact: "Liên hệ"
+      footer:
+       my_account: "Tài khoản của tôi"

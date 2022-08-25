@@ -1,4 +1,5 @@
 <% provide :title, t(".title") %>
+<% provide :button_text, t(".btn_submit") %>
 <section class="vh-100">
   <div class="container py-5 h-100">
     <div class="row d-flex align-items-center justify-content-center h-100">
@@ -9,35 +10,8 @@
       <div class="col-md-7 col-lg-5 col-xl-5 offset-xl-1">
       <h1><%= t(".title") %></h1>
       <br>
-        <%= form_for(@user) do |f| %>
-          <div class="form-outline mb-4">
-            <%= f.label :name, t(".form.name") %>
-            <%= f.text_field :name, class: "form-control" %>
-            <%= raw error_message(@user, :name) %>
-          </div>
-          <div class="form-outline mb-4">
-            <%= f.label :email, t(".form.email") %>
-            <%= f.email_field :email, class: "form-control" %>
-            <%= raw error_message(@user, :email) %>
-          </div>
-          <div class="form-outline mb-4">
-            <%= f.label :password, t(".form.password") %>
-            <%= f.password_field :password, class: "form-control" %>
-            <%= raw error_message(@user, :password) %>
-          </div>
-
-          <div class="form-outline mb-4">
-            <%= f.label :password_confirmation, t(".form.password_confirmation") %>
-            <%= f.password_field :password_confirmation, class: "form-control" %>
-            <%= raw error_message(@user, :password_confirmation) %>
-          </div>
-
-          <div class="submit">
-            <%= f.submit t(".form.btn_submit"), class: "btn btn-primary" %>
-          </div>
-          <hr>
-          <%= t ".form.have_account" %><%= link_to t(".form.login"), login_path %>
-        <% end %>
+        <%= render "form" %><hr>
+        <%= t ".form.have_account" %><%= link_to t(".form.login"), login_path %>
       </div>
     </div>
   </div>

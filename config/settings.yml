@@ -8,7 +8,7 @@ user:
   gavatar_size: 80
   gavatar_size50: 50
   high_length: 255
-  phone_length: 10
+  phone_length: 11
 
 category:
   item: 15
