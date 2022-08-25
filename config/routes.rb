@@ -8,6 +8,8 @@ Rails.application.routes.draw do
     resources :users
     get "/menu", to: "home#menu"
     resources :products, controller: :home, only: :show
+    resource :carts
+
     namespace :admin do
       root to: "dashboard#index"
       resources :categories, except: :show

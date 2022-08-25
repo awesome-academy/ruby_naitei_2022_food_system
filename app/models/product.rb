@@ -29,4 +29,5 @@ class Product < ApplicationRecord
   scope :newest, ->{order(created_at: :desc)}
   scope :search_by_name, ->(search){where("name LIKE '%#{search}%'")}
   scope :not_id, ->(id){where.not id: id}
+  scope :get_by_ids, ->(ids){where id: ids}
 end

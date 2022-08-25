@@ -14,21 +14,21 @@
 end
 
 #create categries include their products
-cates = Category.order(:created_at).take(4)
-15.times do
+Category.all.each do |cate|
+  15.times do
     name = Faker::Food.dish
     desc = Faker::Food.description
     price = rand(1000..3000)
     qty = rand(50..100)
-    cates.each do |cate|
-      prod = cate.products.new(
-        name: name, description: desc, price: price, stock_quantity: qty)
-      prod.save!
-      prod.images.attach(io: File.open("#{Rails.root}/app/assets/images/images/photo#{rand(0..2)}.jpg"),
-                                        filename: "photo#{rand(0..2)}.jpg",
-                                        content_type: "image/jpg")
-    end
+    prod = cate.products.new(
+    name: name, description: desc, price: price, stock_quantity: qty)
+    prod.save!
+    prod.images.attach(io: File.open("#{Rails.root}/app/assets/images/images/photo#{rand(0..2)}.jpg"),
+                                      filename: "photo#{rand(0..2)}.jpg",
+                                      content_type: "image/jpg")
+  end
 end
+
 # Create a main sample user.
 User.create!(name: "admin",
              email: "admin@gmail.com",
@@ -42,7 +42,7 @@ User.create!(name: "admin",
   email = Faker::Internet.email(name: name)
   password = "12345678"
   address = Faker::Address.full_address
-  phone = Faker::PhoneNumber.cell_phone_in_e164
+  phone = rand.to_s[2..11]
   User.create!(name: name,
               email: email,
               password: password,
@@ -53,7 +53,7 @@ User.create!(name: "admin",
 end
 
 # create orders
-users = User.take(4)
+users = User.where("id != ?",1).take(4)
 users.each do |user|
   #each user order 5 times
   5.times do |n|
@@ -71,7 +71,7 @@ users.each do |user|
       order.order_details.create!(
         product_id: product[0][0],
         price: product[0][1],
-        quality: qty
+        quantity: qty
       )
     end
   end

@@ -53,7 +53,7 @@
                         </li>
                       <% else %>
                         <li class="menu-item" >
-                          <%= link_to t(".profile"), user_path %>
+                          <%= link_to t(".profile"), current_user %>
                         </li>
                       <% end %>
                         <li class="menu-item" >
@@ -97,7 +97,7 @@
               <a href="#" class="link-direction">
                 <i class="fas fa-cart-arrow-down"></i>
                 <div class="left-info">
-                  <span class="index">4 <%= t ".items" %></span>
+                  <span class="index"><span id="cart_items_count"><%= items_count %></span> <%= t ".items" %></span>
                   <span class="title"><%= t ".cart" %></span>
                 </div>
               </a>

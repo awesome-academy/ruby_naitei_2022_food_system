@@ -49,8 +49,8 @@
                 <td><%= image_tag order.product.images[0] , style:"weight:80px; height:80px;"%></td>
                 <td><%= order.product.name %></td>
                 <td><%= number_to_currency(order.price, locale: :vi) %></td>
-                <td><%= order.quality %></td>
-                <td><%= number_to_currency(order.price*order.quality, locale: :vi) %></td>
+                <td><%= order.quantity %></td>
+                <td><%= number_to_currency(order.price*order.quantity, locale: :vi) %></td>
               </tr>
             <% end %>
           </tbody>

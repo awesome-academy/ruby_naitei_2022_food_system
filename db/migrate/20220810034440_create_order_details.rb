@@ -4,7 +4,7 @@ class CreateOrderDetails < ActiveRecord::Migration[6.1]
       t.bigint "order_id", null: false
       t.bigint "product_id", null: false
       t.decimal :price
-      t.integer :quality
+      t.integer :quantity
 
       t.timestamps
     end

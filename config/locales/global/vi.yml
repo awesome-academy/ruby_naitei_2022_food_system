@@ -25,3 +25,19 @@ vi:
       foodee: "Fút đê"
     authentication:
       foodee: "Fút đê"
+
+  carts:
+    create:
+      success: "Thêm sản phẩm vào giỏ hàng thành công!"
+      failed: "Thêm sản phẩm vào giỏ hàng thất bại!"
+    show:
+      products_name: "Tên sản phẩm"
+      order_summary: "Tổng kết đơn hàng"
+      shipping: "Vận chuyển"
+      total: "Tổng cộng"
+      clear_cart: "Xóa giỏ hàng"
+      update_cart: "Cập nhật giỏ hàng"
+      checkout: "Đặt ngay"
+      continue: "Tiếp tục mua"
+      free_shipping: "Miễn phí vận chuyển"
+      empty: "Không có sản phẩm nào"
