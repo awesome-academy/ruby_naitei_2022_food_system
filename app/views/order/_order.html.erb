@@ -1,0 +1,21 @@
+<div class="tracking-item">
+  <div class="tracking-icon status-intransit"></div>
+  <div class="tracking-date">
+    <p class="badge btn <%= Settings.send(order.status) %>">
+      <%= t "status_order.#{order.status}" %>
+    </p>
+  </div>
+  <div class="tracking-content">
+    <span><b><%= order.created_at.strftime(Settings.date_format)  %></b></span>
+    <span><b><%= "order_person" %></b> <%= order.user.name %></span>
+    <span><b><%= "address" %>:</b> <%= order.user_address %></span>
+    <span>
+      <b><%= "total_price" %></b>:
+      <%= total_price(order) %>
+    </span>
+    <span>
+      <i class="fa fa-eye" aria-hidden="true"></i>
+      <%= link_to "view_detail", user_order_path(current_user, order) %>
+    </span>
+  </div>
+</div>

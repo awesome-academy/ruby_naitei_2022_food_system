@@ -57,7 +57,7 @@
                         </li>
                       <% end %>
                         <li class="menu-item" >
-                          <%= link_to t(".my_orders"), "#" %>
+                          <%= link_to t(".my_orders"), user_orders_path(current_user) %>
                         </li>
                         <li class="menu-item" >
                           <%= link_to t(".logout"), logout_path, method: :delete %>
