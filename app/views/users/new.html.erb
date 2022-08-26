@@ -1,5 +1,5 @@
 <% provide :title, t(".title") %>
-<% provide :button_text, t(".btn_submit") %>
+<% provide :btn_text, t(".btn_submit") %>
 <section class="vh-100">
   <div class="container py-5 h-100">
     <div class="row d-flex align-items-center justify-content-center h-100">
@@ -11,7 +11,7 @@
       <h1><%= t(".title") %></h1>
       <br>
         <%= render "form" %><hr>
-        <%= t ".form.have_account" %><%= link_to t(".form.login"), login_path %>
+        <%= t ".have_account" %><%= link_to t(".login"), login_path %>
       </div>
     </div>
   </div>

@@ -24,6 +24,7 @@
                       <th><%= t ".email" %></th>
                       <th><%= t ".address" %></th>
                       <th><%= t ".phone" %></th>
+                      <th><%= t ".order total" %></th>
                     </tr>
                   </thead>
                   <tbody>
@@ -33,6 +34,7 @@
                       <td><%= @user.email %></td>
                       <td><%= @user.address %></td>
                       <td><%= @user.phone %></td>
+                      <td><%= @user.orders.count %></td>
                     </tr>
                   </tbody>
                 </table>

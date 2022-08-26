@@ -20,8 +20,10 @@
           <% end %>
         </li>
         <li class="menu-item">
-          <%= link_to new_user_order_path(current_user), class: "link-term mercado-item-title" do %>
-            <%= t ".order" %>
+          <% if logged_in? %>
+            <%= link_to new_user_order_path(current_user), class: "link-term mercado-item-title" do %>
+              <%= t ".order" %>
+            <% end %>
           <% end %>
         </li>
         <li class="menu-item">

@@ -35,7 +35,6 @@
     <%= raw error_message(@user, :password_confirmation) %>
   </div>
   <br>
-  <%= link_to t(".back"), user_path, class: "btn btn-danger" %>
   <%= f.submit yield(:btn_text), class: "btn btn-primary" %>
 
 <% end %>
