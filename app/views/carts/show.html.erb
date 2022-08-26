@@ -23,17 +23,14 @@
     <div class="order-summary">
       <h4 class="title-box"><%= t ".order_summary" %></h4>
       <p class="summary-info"><span class="title"><%= t ".shipping" %></span><b class="index"><%= t ".free_shipping" %></b></p>
-      <p class="summary-info total-info "><span class="title"><%= t ".total" %></span><b class="index"><%= price_format cart_total %></b></p>
+      <p class="summary-info total-info "><span class="title"><%= t ".total" %>(<%= items_count %>)</span><b class="index" id="cart-total"><%= price_format cart_total %></b></p>
     </div>
     <div class="checkout-info">
       <div class="row">
-        <div class="col-md-3">
-          <a class="btn btn-checkout" href="checkout.html"><%= t ".clear_cart" %></a>
+        <div class="col-md-4">
+          <%= link_to t(".clear_cart"), clear_carts_path, class: "btn btn-checkout"  %>
         </div>
-        <div class="col-md-3">
-          <a class="btn btn-checkout" href="checkout.html"><%= t ".update_cart" %></a>
-        </div>
-        <div class="col-md-6">
+        <div class="col-md-8">
           <a class="btn btn-checkout" href="checkout.html"><%= t ".checkout" %></a>
         </div>
       </div>

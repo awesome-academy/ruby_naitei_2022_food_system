@@ -6,7 +6,7 @@
     <div class="wrap-btn">
       <%= form_with(url: carts_path(id: product.id ), html: {class:"add-to-cart", :'data-id' => product.id} ) do |f| %>
         <%= hidden_field_tag :qty, 1, id: "product_quantity_".concat(product.id.to_s) %>
-        <%= f.submit t(".add_to_cart"), class: "function-link", id: "submit-add-to-cart" %>
+        <%= f.submit t(".add_to_cart"), class: "function-link", id: "submit-add-to-cart_".concat(product.id.to_s) %>
       <% end %>
     </div>
   </div>

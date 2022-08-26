@@ -94,13 +94,13 @@
           </div>
           <div class="wrap-icon right-section">
             <div class="wrap-icon-section minicart">
-              <a href="#" class="link-direction">
+              <%= link_to carts_path, class: "link-direction", "data-turbolinks": "false" do %>
                 <i class="fas fa-cart-arrow-down"></i>
                 <div class="left-info">
                   <span class="index"><span id="cart_items_count"><%= items_count %></span> <%= t ".items" %></span>
                   <span class="title"><%= t ".cart" %></span>
                 </div>
-              </a>
+              <% end %>
             </div>
             <div class="wrap-icon-section show-up-after-1024">
               <a href="#" class="mobile-navigation">

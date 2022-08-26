@@ -5,7 +5,7 @@
     <div class="container">
       <ul class="nav primary clone-main-menu" id="mercado_main" data-menuname="Main menu" >
         <li class="menu-item home-icon">
-          <%= link_to root_path, class: "link-term mercado-item-title" do %>
+          <%= link_to root_path, class: "link-term mercado-item-title", "data-turbolinks": "false" do %>
               <i class="fas fa-home"></i>
           <% end %>
         </li>
@@ -15,7 +15,7 @@
           <% end %>
         </li>
         <li class="menu-item">
-          <%= link_to carts_path, class: "link-term mercado-item-title" do %>
+          <%= link_to carts_path, class: "link-term mercado-item-title", "data-turbolinks": "false" do %>
             <%= t ".cart" %>
           <% end %>
         </li>

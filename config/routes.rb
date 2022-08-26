@@ -10,7 +10,10 @@ Rails.application.routes.draw do
     end
     get "/menu", to: "home#menu"
     resources :products, controller: :home, only: :show
-    resource :carts
+    resource :carts, only: [:show, :create] do
+      get "/clear", to: "carts#clear"
+    end
+    resources :carts, only: [:update, :destroy]
 
     namespace :admin do
       root to: "dashboard#index"

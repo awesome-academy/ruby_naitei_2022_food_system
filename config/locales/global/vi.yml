@@ -30,6 +30,7 @@ vi:
     create:
       success: "Thêm sản phẩm vào giỏ hàng thành công!"
       failed: "Thêm sản phẩm vào giỏ hàng thất bại!"
+      no_product: "Sản phẩm không tồn tại"
     show:
       products_name: "Tên sản phẩm"
       order_summary: "Tổng kết đơn hàng"
@@ -41,3 +42,11 @@ vi:
       continue: "Tiếp tục mua"
       free_shipping: "Miễn phí vận chuyển"
       empty: "Không có sản phẩm nào"
+    update:
+      success: "Cập nhật thành công"
+      failed: "Cập nhật thất bại"
+    destroy:
+      success: "Đã xóa khỏi giỏ hàng"
+      failed: "Xóa sản phẩm thất bại"
+    clear:
+      success: "Xóa giỏ hàng thành công"
