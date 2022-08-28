@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_08_15_140448) do
+ActiveRecord::Schema.define(version: 2022_08_28_141709) do
 
   create_table "active_storage_attachments", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.string "name", null: false
@@ -91,6 +91,7 @@ ActiveRecord::Schema.define(version: 2022_08_15_140448) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["product_id"], name: "index_ratings_on_product_id"
+    t.index ["user_id", "product_id"], name: "index_ratings_on_user_id_and_product_id", unique: true
     t.index ["user_id"], name: "index_ratings_on_user_id"
   end
 

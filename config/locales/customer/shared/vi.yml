@@ -21,3 +21,10 @@ vi:
         contact: "Liên hệ"
       footer:
        my_account: "Tài khoản của tôi"
+
+    products:
+      show:
+        post: "Đăng"
+        review_for: "đánh giá cho"
+        your_rating: "Đánh giá của bạn"
+        your_review: "Bình luận của bạn"

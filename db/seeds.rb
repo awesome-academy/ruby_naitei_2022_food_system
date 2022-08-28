@@ -77,3 +77,14 @@ users.each do |user|
     end
   end
 end
+#create review for products
+products = Product.newest.take(5)
+products.each do |product|
+  5.times do |n|
+    product.ratings.create(
+    user_id: n,
+    star: rand(1..5),
+    comment: Faker::Lorem.sentence(word_count: rand(2..6))
+  )
+  end
+end

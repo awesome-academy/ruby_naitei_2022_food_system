@@ -1,5 +1,5 @@
 class HomeController < ApplicationController
-  before_action :find_product_by_id, only: :show
+  before_action :find_product_by_id, :all_reviews, only: :show
 
   def index
     @latests = Product.newest.take(Settings.num_products)
@@ -11,7 +11,7 @@ class HomeController < ApplicationController
 
   def menu
     @pagy, @products = pagy(Product.search_by_name(params[:search]),
-                            item: Settings.pagy.item)
+                            items: Settings.pagy.items)
     render "menu/index"
   end
 
@@ -22,7 +22,6 @@ class HomeController < ApplicationController
                        .take(Settings.num_products)
     render "customer/products/show"
   end
-
   private
 
   def find_product_by_id
@@ -31,5 +30,10 @@ class HomeController < ApplicationController
 
     flash[:error] = t ".not_found"
     redirect_to root_path
+  end
+
+  def all_reviews
+    @pagy_review, @posts = pagy(@product.ratings,
+                                items: Settings.pagy.review_items)
   end
 end
