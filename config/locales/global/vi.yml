@@ -41,7 +41,7 @@ vi:
       checkout: "Đặt ngay"
       continue: "Tiếp tục mua"
       free_shipping: "Miễn phí vận chuyển"
-      empty: "Không có sản phẩm nào"
+      shopping_now: "Chọn món ngay!"
     update:
       success: "Cập nhật thành công"
       failed: "Cập nhật thất bại"
@@ -57,3 +57,10 @@ vi:
     failed: "Thêm đánh giá không thành công"
     create:
       success: "Cảm ơn đánh giá của bạn"
+
+  orders:
+    buy_again:
+      success: "Thêm các sản phẩm vào giỏ hàng thành công"
+    update:
+      success: "Hủy đơn hàng thanh công"
+      failed: "Hủy đơn hàng thất bại"

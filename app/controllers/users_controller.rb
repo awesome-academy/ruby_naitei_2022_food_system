@@ -28,7 +28,7 @@ class UsersController < ApplicationController
       redirect_to root_path
     else
       flash.now[:error] = t ".signup_failed"
-      render :new
+      render :new, layout: "authentication"
     end
   end
 

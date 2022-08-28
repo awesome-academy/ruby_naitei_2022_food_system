@@ -28,3 +28,11 @@ en:
         gift: "Get a gift!"
         support: "Support 24/7"
         listen: "Always listen to customers"
+
+    orders:
+      new:
+        shopping_now: "Shopping now!"
+      show:
+        cancel: "Cancel order"
+        you_sure: "Are you sure?"
+        buy_again: "Buy again"

@@ -6,7 +6,11 @@ Rails.application.routes.draw do
     post "/login", to: "sessions#create"
     delete "/logout", to: "sessions#destroy"
     resources :users do
-      resources :orders, only: %i(index new create show)
+      resources :orders, except: %i(edit) do
+        member do
+          post :buy_again
+        end
+      end
     end
     get "/menu", to: "home#menu"
     resources :products, controller: :home, only: :show
