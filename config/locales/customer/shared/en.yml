@@ -17,7 +17,7 @@ en:
         about: "About Us"
         menu: "Menu"
         cart: "Cart"
-        checkout: "Checkout"
+        order: "Order"
         contact: "Contact"
       footer:
        my_account: "My Account"

@@ -34,6 +34,7 @@ User.create!(name: "admin",
              email: "admin@gmail.com",
              password: "12341234",
              password_confirmation: "12341234",
+             address: "Ho Chi Minh, Viet Nam",
              phone: "0123456782",
              admin: true)
 #crate user
@@ -62,7 +63,7 @@ users.each do |user|
       user_address: user.address,
       user_phone: user.phone,
       note: Faker::Lorem.sentence(word_count: rand(2..8)),
-      status: rand(0..3)
+      status: rand(0..4)
     )
     #each order have 1-4 products
     rand(1..4).times do |n|

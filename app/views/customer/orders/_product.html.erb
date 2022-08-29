@@ -1,0 +1,19 @@
+<tbody>
+    <tr>
+      <td>
+        <div class="product-image">
+          <figure><%= image_tag product.images[0] %></figure>
+        </div>
+      </td>
+      <td>
+        <div class="product-name">
+          <%= link_to product.name, product_path(product) %>
+        </div>
+      </td>
+      <td>
+        <div class="price-field produtc-price"><p class="price"><%= number_to_currency(product.price, locale: :vi) %></p></div>
+      </td>
+      <td><div class="price-field produtc-price"><p class="price"><%= qty(product) %></p></div></td>
+      <td><div class="price-field sub-total"><p class="price"><%= number_to_currency(sub_total(product.id), locale: :vi) %></p></div></td>
+    </tr>
+</tbody>

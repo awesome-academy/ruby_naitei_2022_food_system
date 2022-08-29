@@ -6,11 +6,8 @@ class Order < ApplicationRecord
     open: 0,
     confirmed: 1,
     shipping: 2,
-    completed: 3
+    completed: 3,
+    cancelled: 4
   }
-  validates :user_phone, numericality: {only_integer: true},
-    length: {maximum: Settings.user.phone_length}
-  validates :user_address, presence: true,
-    length: {maximum: Settings.user.high_length}
   scope :newest, ->{order created_at: :desc}
 end

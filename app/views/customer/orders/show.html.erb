@@ -21,8 +21,9 @@
               <h4 class="mb-1"><%= t ".status" %>:</h4>
               <h4 class="mb-1"><%= t ".phone" %>:</h4>
               <h4 class="mb-1"><%= t ".address" %>:</h4>
+              <h4 class="mb-1"><%= t ".note" %>:</h4>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-10">
               <h4 class="mb-1"><%= @order.user.name %></h4>
               <h4 class="mb-1"><%= @order.created_at.strftime(Settings.date_format) %></h4>
               <h4 class="mb-1">
@@ -32,6 +33,7 @@
               </h4>
               <h4 class="mb-1"><%= @order.user_phone %></h4>
               <h4 class="mb-1"><%= @order.user_address %></h4>
+              <h4 class="mb-1"><%= @order.note %></h4>
             </div>
           </div>
           <div class="row p-5">
@@ -50,9 +52,10 @@
                   <% @order_details.each do |detail| %>
                     <tr>
                       <td><%= image_tag detail.product.images[0] , style:"weight:80px; height:80px;" %></td>
-                      <td><%= link_to product_path(detail.product) do %>
-                            <span><%= detail.product.name %></span>
-                          <% end %>
+                      <td>
+                        <%= link_to product_path(detail.product) do %>
+                          <span><%= detail.product.name %></span>
+                        <% end %>
                       </td>
                       <td><%= number_to_currency(detail.price, locale: :vi) %></td>
                       <td><%= detail.quantity %></td>
@@ -67,6 +70,7 @@
             <div class="py-3 px-5 text-right">
               <div class="h2 font-weight-light"><%= t ".total" %><%=  total_price(@order) %></div>
             </div>
+            <%= link_to t(".back"), user_orders_path, class: "btn btn-danger" %>
           </div>
         </div>
       </div>

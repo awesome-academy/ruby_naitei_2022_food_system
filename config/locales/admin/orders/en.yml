@@ -39,3 +39,4 @@ en:
     confirmed: "Confirmed"
     shipping: "Shipping"
     completed: "Completed"
+    cancelled: "Cancelled"

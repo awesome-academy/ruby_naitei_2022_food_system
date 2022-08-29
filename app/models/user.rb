@@ -13,7 +13,10 @@ class User < ApplicationRecord
   validates :password, presence: true,
         length: {minimum: Settings.user.password_min,
                  maximum: Settings.user.password_max}
-
+  validates :phone, numericality: {only_integer: true},
+        length: {maximum: Settings.user.phone_length}
+  validates :address, presence: true,
+        length: {maximum: Settings.user.high_length}
   has_secure_password
 
   before_save :downcase_email

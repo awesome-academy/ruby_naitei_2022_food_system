@@ -14,6 +14,7 @@
             <h5><%= t ".address" %>:</h5>
             <h5><%= t ".status" %>:</h5>
             <h5><%= t ".created_order" %>:</h5>
+            <h5><%= t ".note" %>:</h5>
           </div>
           <div class="col-md-8">
             <h5><%= @order.user.name %></h5>
@@ -25,6 +26,7 @@
               </span>
             </h5>
             <h5><%= @order.created_at.strftime(Settings.date_format) %></h5>
+            <h5><%= @order.note %></h5>
           </div>
         </div>
       </div>
