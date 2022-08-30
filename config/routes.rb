@@ -20,7 +20,13 @@ Rails.application.routes.draw do
       resources :categories, except: :show
       resources :products
       resources :users, only: %i(index show destroy)
-      resources :orders
+      resources :orders do
+        member do
+          put :approve
+          put :reject
+          put :undo
+        end
+      end
     end
   end
 end

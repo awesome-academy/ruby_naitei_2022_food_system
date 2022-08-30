@@ -11,7 +11,7 @@ class HomeController < ApplicationController
 
   def menu
     @pagy, @products = pagy(Product.search_by_name(params[:search]),
-                            item: Settings.pagy.item)
+                            items: Settings.pagy.items)
     render "menu/index"
   end
 

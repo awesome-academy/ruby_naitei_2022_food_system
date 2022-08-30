@@ -34,7 +34,7 @@ User.create!(name: "admin",
              email: "admin@gmail.com",
              password: "12341234",
              password_confirmation: "12341234",
-             address: "Ho Chi Minh, Viet Nam",
+             address: "Ho chi minh, viet nam",
              phone: "0123456782",
              admin: true)
 #crate user

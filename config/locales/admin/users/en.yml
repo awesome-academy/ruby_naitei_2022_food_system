@@ -1,5 +1,6 @@
 en:
   admin:
+    access_denied: "You can not access this page. Please login first"
     users:
       not_found: "User not found"
       index:

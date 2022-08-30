@@ -20,6 +20,7 @@ vi:
       login: "Đăng nhập ngay!"
     create:
       signup_failed: "Đăng ký thất bại!"
+      signup_success: "Đăng ký thành công"
     form:
       name: "Tên"
       email: "Email"

@@ -8,7 +8,7 @@ class Admin::AdminController < ApplicationController
   def must_be_admin
     return if current_user.admin?
 
-    flash[:error] = t "flashes.access_denied"
+    flash[:error] = t "admin.access_denied"
     redirect_back(fallback_location: root_path)
   end
 end

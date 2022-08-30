@@ -31,7 +31,10 @@
           <%= link_to t(".clear_cart"), clear_carts_path, class: "btn btn-checkout" %>
         </div>
         <div class="col-md-8">
-        <%= link_to t(".checkout"), new_user_order_path(current_user), class:"btn btn-checkout" %>
+          <% if logged_in? %>
+            <%= link_to t(".checkout"), new_user_order_path(current_user), class:"btn btn-checkout" %>
+          <% end %>
+        </div>
       </div>
     </div>
   </div>

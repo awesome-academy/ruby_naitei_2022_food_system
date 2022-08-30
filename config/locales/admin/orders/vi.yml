@@ -1,5 +1,9 @@
 vi:
   admin:
+    confirmed: "Xác nhận đơn hàng thành công"
+    approve: "Cập nhật trạng thái vận chuyển thành công"
+    complete: "Đơn hàng đã hoàn thành"
+    open: "Cập nhật trạng thái mở"
     orders:
       not_found: "Đơn đặt hàng này không tồn tại"
       index:
@@ -14,6 +18,7 @@ vi:
         created_order: "Ngày đặt hàng"
         total_price: "Tổng tiền"
       show:
+        user_inf: "Thông tin người đặt hàng"
         back: "Quay lại"
         image: "Hình ảnh"
         name_product: "Tên sản phẩm"
@@ -28,15 +33,23 @@ vi:
         phone: "Số điện thoại"
         status: "Trạng thái"
         created_order: "Ngày đặt hàng"
+        you_sure: "Bạn chắc chắn muốn cập nhật?"
+        confirm: "Bạn có chắc là muốn hủy bỏ?"
+        undo_confirm: "Bạn có chắc chắn muốn hoàn tác không?"
         open: "Chờ xác nhận"
         confirmed: "Đã xác nhận"
         shipping: "Đang chuyển hàng"
         completed: "Hoàn thành"
-      order:
-        confirm: "Bạn chắc chắn muốn xóa?"
-  status_order:
-    open: "Chờ xác nhận"
-    confirmed: "Đã xác nhận"
-    shipping: "Đang chuyển hàng"
-    completed: "Hoàn thành"
-    cancelled: "Đã hủy"
+        cancelled: "Đã hủy"
+        acction: "Hàng động"
+        approve: " Cập nhật"
+        cancel: "  Từ chối"
+        c_confirmed: "Xác nhận"
+      approve:
+        failed: "Cập nhật thất bại, vui lòng thử lại"
+      reject:
+        cancel_success: "Từ chối thành công"
+        cancel_failed: "Từ chối không thành công. Vui lòng thử lại!"
+      undo:
+        success: "Hoàn tác trạng thái mở thành công"
+        failed: "Hoàn tác trạng thái mở không thành công. Vui lòng thử lại!"

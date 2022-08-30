@@ -1,12 +1,15 @@
 en:
   admin:
+    confirmed: "Order confirmation successful"
+    approve: "Shipping status update successful"
+    complete: "Order completed"
+    open: "Update open status"
     orders:
       not_found: "This orders is not exist"
       index:
         key: "All"
         value: "Orders"
         name: "Name"
-        email: "Email"
         address: "Address"
         phone: "Phone number"
         status: "Status"
@@ -15,6 +18,7 @@ en:
         created_order: "Created order day"
         total_price: "Total price"
       show:
+        user_inf: "Ordering information"
         back: "Back"
         image: "Image"
         name_product: "Name product"
@@ -29,14 +33,23 @@ en:
         phone: "Phone number"
         status: "Status"
         created_order: "Created order day"
-      destroy:
-        success: "Successfuly deleted!"
-        failed: "Delete product failed. Please try again!"
-      order:
-        confirm: "Are you sure to delete?"
-  status_order:
-    open: "Open"
-    confirmed: "Confirmed"
-    shipping: "Shipping"
-    completed: "Completed"
-    cancelled: "Cancelled"
+        you_sure: "You definitely want to update"
+        confirm: "Are you sure you want to cancel?"
+        undo: "Are you sure you want to undo?"
+        open: "Open"
+        confirmed: "Confirmed"
+        shipping: "Shipping"
+        completed: "Completed"
+        cancelled: "Cancelled"
+        acction: "Action"
+        approve: " Approve"
+        cancel: "  Cancel"
+        c_confirmed: "Confirm?"
+      approve:
+        failed: "Update failed, please try again"
+      reject:
+        cancel_success: "Cancel success"
+        cancel_failed: "Cancel failed. Please try again!"
+      undo:
+        success: "Undo open status success"
+        failed: "Undo open status failed. Please try again!"

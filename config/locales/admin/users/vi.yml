@@ -1,5 +1,6 @@
 vi:
   admin:
+    access_denied: "Bạn không có quyền truy cập trang này. Vui lòng đăng nhập trước"
     users:
       not_found: "Không tìm thấy người dùng"
       index:
