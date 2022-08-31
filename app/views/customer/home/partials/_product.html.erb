@@ -1,6 +1,6 @@
 <div class="product product-style-2 equal-elem ">
   <div class="product-thumnail">
-    <%= link_to product_path product do %>
+    <%= link_to product_path(product), "data-turbolinks": "false" do %>
       <figure><%= image_tag product.images[0], class: "dish-img" %></figure>
     <% end %>
     <div class="wrap-btn">

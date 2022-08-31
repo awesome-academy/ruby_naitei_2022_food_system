@@ -50,3 +50,10 @@ vi:
       failed: "Xóa sản phẩm thất bại"
     clear:
       success: "Xóa giỏ hàng thành công"
+
+  ratings:
+    no_product: "Không tìm thấy sản phẩm"
+    cant_review: "Bạn không thể đánh giá nếu chưa mua sản phẩm"
+    failed: "Thêm đánh giá không thành công"
+    create:
+      success: "Cảm ơn đánh giá của bạn"

@@ -2,6 +2,7 @@ class User < ApplicationRecord
   attr_accessor :remember_token
 
   has_many :orders, dependent: :destroy
+  has_many :ratings, dependent: :destroy
 
   validates :name, presence: true,
               length: {maximum: Settings.user.name_max,
@@ -10,7 +11,7 @@ class User < ApplicationRecord
         length: {maximum: Settings.user.email_max},
         format: {with: Settings.user.email_pattern},
         uniqueness: true
-  validates :password, presence: true,
+  validates :password, presence: true, allow_nil: true,
         length: {minimum: Settings.user.password_min,
                  maximum: Settings.user.password_max}
   validates :phone, numericality: {only_integer: true},

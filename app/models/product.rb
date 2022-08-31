@@ -4,6 +4,8 @@ class Product < ApplicationRecord
 
   belongs_to :category
   has_many_attached :images
+  has_many :ratings, dependent: :destroy
+  has_many :order_details, dependent: :restrict_with_error
 
   validates :name, presence: true,
             length: {minium: Settings.product.name_min,

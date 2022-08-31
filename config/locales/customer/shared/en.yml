@@ -21,3 +21,10 @@ en:
         contact: "Contact"
       footer:
        my_account: "My Account"
+
+    products:
+      show:
+        post: "Post"
+        review_for: "review for"
+        your_rating: "Your rating"
+        your_review: "Your review"

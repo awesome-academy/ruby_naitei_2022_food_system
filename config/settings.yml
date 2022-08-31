@@ -27,6 +27,7 @@ date_format: "%Y-%m-%d"
 
 pagy:
   items: 15
+  review_items: 5
 
 num_products: 10
 num_categories: 4
@@ -38,3 +39,7 @@ completed: "badge-success"
 cancelled: "badge-danger"
 button: [ {name: btn-primary}, {name: btn-info}, {name: btn-secondary},
           {name: btn-success}, {name: btn-danger}]
+rating:
+  star_min: 0
+  star_max: 6
+  length: 255

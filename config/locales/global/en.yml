@@ -50,3 +50,10 @@ en:
       failed: "Remove item failed"
     clear:
       success: "Cart is empty now!"
+
+  ratings:
+    no_product: "This product not found"
+    cant_review: "You have not bought it, you will not be able to review"
+    failed: "Add a review failed"
+    create:
+      success: "Thank you for your review"

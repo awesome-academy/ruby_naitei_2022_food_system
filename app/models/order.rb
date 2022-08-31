@@ -1,7 +1,7 @@
 class Order < ApplicationRecord
   belongs_to :user
+  has_many :order_details, dependent: :restrict_with_error
   has_many :products, through: :order_details
-  has_many :order_details, dependent: :destroy
   enum status: {
     open: 0,
     confirmed: 1,

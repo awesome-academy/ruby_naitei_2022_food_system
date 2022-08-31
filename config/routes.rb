@@ -14,6 +14,7 @@ Rails.application.routes.draw do
       get "/clear", to: "carts#clear"
     end
     resources :carts, only: [:update, :destroy]
+    resources :ratings, only: :create
 
     namespace :admin do
       root to: "dashboard#index"
