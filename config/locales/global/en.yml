@@ -41,7 +41,7 @@ en:
       checkout: "Check out"
       continue: "Continue Shopping"
       free_shipping: "Free Shipping"
-      empty: "Cart is empty"
+      shopping_now: "Shopping now!"
     update:
       success: "Update item success"
       failed: "Update item failed"
@@ -57,3 +57,10 @@ en:
     failed: "Add a review failed"
     create:
       success: "Thank you for your review"
+
+  orders:
+    buy_again:
+      success: "Successful added products to cart"
+    update:
+      success: "Successful cancelled order"
+      failed: "Cancel order failed"

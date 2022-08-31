@@ -26,10 +26,27 @@ class OrdersController < ApplicationController
     end
   end
 
+  def update
+    if @order.open?
+      @order.cancelled!
+      flash[:success] = t ".success"
+    else
+      flash[:error] = t ".failed"
+    end
+    redirect_to user_orders_path
+  end
+
   def show
     @pagy, @order_details = pagy(@order.order_details.includes(:product),
                                  items: Settings.pagy.items)
     render "customer/orders/show"
+  end
+
+  def buy_again
+    product_ids = @order.order_details.pluck :product_id
+    add_products_to_cart product_ids
+    flash[:success] = t ".success"
+    redirect_to carts_path
   end
 
   private

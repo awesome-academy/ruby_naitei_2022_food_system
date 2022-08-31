@@ -71,6 +71,12 @@
               <div class="h2 font-weight-light"><%= t ".total" %><%=  total_price(@order) %></div>
             </div>
             <%= link_to t(".back"), user_orders_path, class: "btn btn-danger" %>
+            <% if @order.open? %>
+              <%= link_to t(".cancel"), user_order_path(@order), class: "btn btn-warning", method: :put, data: {confirm: t(".you_sure")} %>
+            <% end %>
+            <% if @order.cancelled? || @order.completed? %>
+              <%= link_to t(".buy_again"), buy_again_user_order_path(@order), method: :post, class: "btn btn-success", data: {confirm: t(".you_sure")} %>
+            <% end %>
           </div>
         </div>
       </div>

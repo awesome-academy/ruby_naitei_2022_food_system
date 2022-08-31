@@ -28,3 +28,11 @@ vi:
         gift: "Nhận quà!"
         support: "Hỗ trợ 24/7"
         listen: "Luôn luôn lắng nghe khách hàng"
+
+    orders:
+      new:
+        shopping_now: "Chọn món ngay!"
+      show:
+        cancel: "Hủy đơn"
+        you_sure: "Bạn chắc chắn chứ?"
+        buy_again: "Mua lại"

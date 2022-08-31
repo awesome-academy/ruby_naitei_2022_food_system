@@ -30,4 +30,14 @@ module CartsHelper
   def clear_cart
     session[:cart] = {}
   end
+
+  def add_products_to_cart product_ids
+    product_ids.each do |id|
+      if @cart.key? id.to_s
+        @cart[id.to_s] += 1
+      else
+        @cart[id.to_s] = 1
+      end
+    end
+  end
 end

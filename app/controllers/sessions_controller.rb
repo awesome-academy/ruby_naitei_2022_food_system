@@ -9,7 +9,7 @@ class SessionsController < ApplicationController
       handle_log_in user
     else
       flash.now[:error] = t ".invalid"
-      render :new
+      render :new, layout: "authentication"
     end
   end
 
